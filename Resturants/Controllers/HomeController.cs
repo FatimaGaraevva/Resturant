@@ -20,7 +20,7 @@ namespace Resturants.Controllers
         {
             HomeVM homeVM = new HomeVM
             {
-                Menus = await _context.Menus.Take(4).ToListAsync()
+                Menus = await _context.Menus.Take(8).ToListAsync()
             };
             return View(homeVM);    
         }
