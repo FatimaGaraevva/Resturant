@@ -1,0 +1,50 @@
+﻿@using Resturants.Models
+@using Resturants.ViewModels.MealVM
+@model CreateMenuVM
+
+<div class="row">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Create Menu</h4>
+
+                <form asp-action="Create" method="post" enctype="multipart/form-data" class="forms-sample">
+                    <div class="form-group">
+                        <label asp-for="Photo">Photo</label>
+                        <input asp-for="Photo" type="file" accept="image/*" class="form-control" />
+                        <span class="text-danger" asp-validation-for="Photo"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Name">Name</label>
+                        <input asp-for="Name" class="form-control" placeholder="Name" />
+                        <span class="text-danger" asp-validation-for="Name"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Price">Price</label>
+                        <input asp-for="Price" class="form-control" placeholder="Price" />
+                        <span class="text-danger" asp-validation-for="Price"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="ChefId">Chef</label>
+                        <select asp-for="ChefId" class="form-control" asp-items="@(new SelectList(Model.Chefs, nameof(Chef.Id), nameof(Chef.Name)))">
+                            <option selected disabled>Choose Chef</option>
+                        </select>
+                        <span class="text-danger" asp-validation-for="ChefId"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Description">Description</label>
+                        <textarea asp-for="Description" rows="7" class="form-control" placeholder="Description"></textarea>
+                        <span class="text-danger" asp-validation-for="Description"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary me-2">Submit</button>
+                    <button type="button" class="btn btn-light" onclick="history.back()">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

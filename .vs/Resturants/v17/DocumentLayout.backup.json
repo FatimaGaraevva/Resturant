@@ -3,60 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\Resturants\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\models\\chefmeal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\models\\chefmeal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615230853_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Resturants\\Migrations\\20250615230853_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\models\\sosialmedia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\models\\sosialmedia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\models\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\models\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\models\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\models\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\models\\chef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\models\\chef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\viewmodels\\user\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\viewmodels\\user\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\viewmodels\\user\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\viewmodels\\user\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615225730_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Resturants\\Migrations\\20250615225730_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\viewmodels\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\viewmodels\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\migrations\\20250611113444_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\migrations\\20250611113444_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,16 +59,116 @@
       "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\resturants.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\models\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\models\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\models\\chef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\models\\chef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615223927_appUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Resturants\\Migrations\\20250615223927_appUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\models\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\models\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\utilites\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\utilites\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\areas\\admin\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\areas\\admin\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\viewmodels\\menuvm\\updatemenuvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\viewmodels\\menuvm\\updatemenuvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\viewmodels\\menuvm\\getmenuvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\viewmodels\\menuvm\\getmenuvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\viewmodels\\menuvm\\createmenuvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\viewmodels\\menuvm\\createmenuvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\areas\\admin\\views\\menu\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\areas\\admin\\views\\menu\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\areas\\admin\\views\\menu\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\areas\\admin\\views\\menu\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\areas\\admin\\views\\menu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\areas\\admin\\views\\menu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\viewmodels\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\viewmodels\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\migrations\\20250615191640_createimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\migrations\\20250615191640_createimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615205427_FixChefMenuCascade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Resturants\\Migrations\\20250615205427_FixChefMenuCascade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615205208_FixChefMenuCascade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Resturants\\Migrations\\20250615205208_FixChefMenuCascade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615204711_Table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Resturants\\Migrations\\20250615204711_Table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\utilites\\extensions\\filevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\utilites\\extensions\\filevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\utilites\\enums\\filesize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\utilites\\enums\\filesize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\migrations\\20250615164448_newtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\migrations\\20250615164448_newtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\migrations\\20250611113444_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\migrations\\20250611113444_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\models\\base\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -89,6 +181,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\migrations\\20250615173913_changetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\migrations\\20250615173913_changetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\migrations\\20250615172116_tablechefmeal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\migrations\\20250615172116_tablechefmeal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\migrations\\20250615211020_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\migrations\\20250615211020_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|c:\\users\\user\\source\\repos\\resturants\\resturants\\migrations\\20250615210113_fixchefmenucascade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC5370-B3D8-4002-A934-0D053B69CEB9}|Resturants\\Resturants.csproj|solutionrelative:resturants\\migrations\\20250615210113_fixchefmenucascade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,7 +206,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -107,172 +215,188 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SosialMedia.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Models\\SosialMedia.cs",
-              "RelativeDocumentMoniker": "Resturants\\Models\\SosialMedia.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Models\\SosialMedia.cs",
-              "RelativeToolTip": "Resturants\\Models\\SosialMedia.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T14:51:06.935Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Resturants\\Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Resturants\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "Title": "20250615230853_test.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615230853_test.cs",
+              "RelativeDocumentMoniker": "Resturants\\Migrations\\20250615230853_test.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615230853_test.cs",
+              "RelativeToolTip": "Resturants\\Migrations\\20250615230853_test.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T14:30:13.557Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_AdminLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "Resturants\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeToolTip": "Resturants\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAlwCAAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T14:29:55.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Resturants\\Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "Resturants\\Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T14:27:25.19Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Resturants\\Areas\\Admin\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "Resturants\\Areas\\Admin\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T14:26:30.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Resturants\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Resturants\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T14:25:11.784Z",
+              "WhenOpened": "2025-06-15T23:08:53.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Resturants\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Resturants\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAGsBAAAAAAAAAAAAAHABAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-11T07:37:06.087Z",
+              "Title": "ChefMeal.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Models\\ChefMeal.cs",
+              "RelativeDocumentMoniker": "Resturants\\Models\\ChefMeal.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Models\\ChefMeal.cs",
+              "RelativeToolTip": "Resturants\\Models\\ChefMeal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T17:11:31.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Models\\Menu.cs",
+              "RelativeDocumentMoniker": "Resturants\\Models\\Menu.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Models\\Menu.cs",
+              "RelativeToolTip": "Resturants\\Models\\Menu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T09:47:35.575Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "ScaffoldingReadMe.txt",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\ScaffoldingReadMe.txt",
-              "RelativeDocumentMoniker": "Resturants\\ScaffoldingReadMe.txt",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\ScaffoldingReadMe.txt",
-              "RelativeToolTip": "Resturants\\ScaffoldingReadMe.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-06-12T14:18:11.182Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Program.cs",
               "RelativeDocumentMoniker": "Resturants\\Program.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Program.cs",
               "RelativeToolTip": "Resturants\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T07:45:55.863Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "20250611113444_first.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250611113444_first.cs",
-              "RelativeDocumentMoniker": "Resturants\\Migrations\\20250611113444_first.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250611113444_first.cs",
-              "RelativeToolTip": "Resturants\\Migrations\\20250611113444_first.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "LoginVM.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\ViewModels\\User\\LoginVM.cs",
+              "RelativeDocumentMoniker": "Resturants\\ViewModels\\User\\LoginVM.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\ViewModels\\User\\LoginVM.cs",
+              "RelativeToolTip": "Resturants\\ViewModels\\User\\LoginVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T11:34:44.846Z"
+              "WhenOpened": "2025-06-15T22:27:34.847Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Resturants\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "Resturants\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-11T07:34:56.099Z",
+              "DocumentIndex": 7,
+              "Title": "RegisterVM.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\ViewModels\\User\\RegisterVM.cs",
+              "RelativeDocumentMoniker": "Resturants\\ViewModels\\User\\RegisterVM.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\ViewModels\\User\\RegisterVM.cs",
+              "RelativeToolTip": "Resturants\\ViewModels\\User\\RegisterVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T22:27:55.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Chef.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Models\\Chef.cs",
+              "RelativeDocumentMoniker": "Resturants\\Models\\Chef.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Models\\Chef.cs",
+              "RelativeToolTip": "Resturants\\Models\\Chef.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T09:47:59.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "Resturants\\Models\\AppUser.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Models\\AppUser.cs",
+              "RelativeToolTip": "Resturants\\Models\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T22:20:27.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Rating.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Models\\Rating.cs",
+              "RelativeDocumentMoniker": "Resturants\\Models\\Rating.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Models\\Rating.cs",
+              "RelativeToolTip": "Resturants\\Models\\Rating.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T09:59:52.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SosialMedia.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Models\\SosialMedia.cs",
+              "RelativeDocumentMoniker": "Resturants\\Models\\SosialMedia.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Models\\SosialMedia.cs",
+              "RelativeToolTip": "Resturants\\Models\\SosialMedia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T14:51:06.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20250615225730_test.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615225730_test.cs",
+              "RelativeDocumentMoniker": "Resturants\\Migrations\\20250615225730_test.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615225730_test.cs",
+              "RelativeToolTip": "Resturants\\Migrations\\20250615225730_test.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T22:57:30.556Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "HomeVM.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\ViewModels\\HomeVM.cs",
-              "RelativeDocumentMoniker": "Resturants\\ViewModels\\HomeVM.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\ViewModels\\HomeVM.cs",
-              "RelativeToolTip": "Resturants\\ViewModels\\HomeVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Resturants\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Resturants\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T14:25:14.186Z"
+              "WhenOpened": "2025-06-15T22:19:03.787Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\DAL\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Resturants\\DAL\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\DAL\\AppDbContext.cs",
               "RelativeToolTip": "Resturants\\DAL\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T11:15:01.419Z"
+              "WhenOpened": "2025-06-11T11:15:01.419Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
+              "Title": "Resturants.csproj",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Resturants.csproj",
+              "RelativeDocumentMoniker": "Resturants\\Resturants.csproj",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Resturants.csproj",
+              "RelativeToolTip": "Resturants\\Resturants.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-11T11:14:24.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Resturants\\Controllers\\HomeController.cs",
@@ -286,66 +410,403 @@
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "Resturants.csproj",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Resturants.csproj",
-              "RelativeDocumentMoniker": "Resturants\\Resturants.csproj",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Resturants.csproj",
-              "RelativeToolTip": "Resturants\\Resturants.csproj",
+              "Title": "20250615223927_appUser.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615223927_appUser.cs",
+              "RelativeDocumentMoniker": "Resturants\\Migrations\\20250615223927_appUser.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615223927_appUser.cs",
+              "RelativeToolTip": "Resturants\\Migrations\\20250615223927_appUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-11T11:14:24.695Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T22:39:27.431Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "Rating.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Models\\Rating.cs",
-              "RelativeDocumentMoniker": "Resturants\\Models\\Rating.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Models\\Rating.cs",
-              "RelativeToolTip": "Resturants\\Models\\Rating.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Utilites\\Enums\\UserRole.cs",
+              "RelativeDocumentMoniker": "Resturants\\Utilites\\Enums\\UserRole.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Utilites\\Enums\\UserRole.cs",
+              "RelativeToolTip": "Resturants\\Utilites\\Enums\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T09:59:52.544Z"
+              "WhenOpened": "2025-06-15T22:25:05.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Views\\Menu\\Create.cshtml",
+              "RelativeDocumentMoniker": "Resturants\\Areas\\Admin\\Views\\Menu\\Create.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Views\\Menu\\Create.cshtml",
+              "RelativeToolTip": "Resturants\\Areas\\Admin\\Views\\Menu\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T21:33:52.995Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "Chef.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Models\\Chef.cs",
-              "RelativeDocumentMoniker": "Resturants\\Models\\Chef.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Models\\Chef.cs",
-              "RelativeToolTip": "Resturants\\Models\\Chef.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Controllers\\MenuController.cs",
+              "RelativeDocumentMoniker": "Resturants\\Areas\\Admin\\Controllers\\MenuController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Controllers\\MenuController.cs",
+              "RelativeToolTip": "Resturants\\Areas\\Admin\\Controllers\\MenuController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T09:47:59.43Z"
+              "WhenOpened": "2025-06-15T20:09:59.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Views\\Menu\\Update.cshtml",
+              "RelativeDocumentMoniker": "Resturants\\Areas\\Admin\\Views\\Menu\\Update.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Views\\Menu\\Update.cshtml",
+              "RelativeToolTip": "Resturants\\Areas\\Admin\\Views\\Menu\\Update.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T21:47:29.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CreateMenuVM.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\ViewModels\\MenuVM\\CreateMenuVM.cs",
+              "RelativeDocumentMoniker": "Resturants\\ViewModels\\MenuVM\\CreateMenuVM.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\ViewModels\\MenuVM\\CreateMenuVM.cs",
+              "RelativeToolTip": "Resturants\\ViewModels\\MenuVM\\CreateMenuVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T20:13:06.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Views\\Menu\\Index.cshtml",
+              "RelativeDocumentMoniker": "Resturants\\Areas\\Admin\\Views\\Menu\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Views\\Menu\\Index.cshtml",
+              "RelativeToolTip": "Resturants\\Areas\\Admin\\Views\\Menu\\Index.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAACMAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-15T19:56:56.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GetMenuVM.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\ViewModels\\MenuVM\\GetMenuVM.cs",
+              "RelativeDocumentMoniker": "Resturants\\ViewModels\\MenuVM\\GetMenuVM.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\ViewModels\\MenuVM\\GetMenuVM.cs",
+              "RelativeToolTip": "Resturants\\ViewModels\\MenuVM\\GetMenuVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T19:30:20.574Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Models\\Menu.cs",
-              "RelativeDocumentMoniker": "Resturants\\Models\\Menu.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Models\\Menu.cs",
-              "RelativeToolTip": "Resturants\\Models\\Menu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Title": "UpdateMenuVM.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\ViewModels\\MenuVM\\UpdateMenuVM.cs",
+              "RelativeDocumentMoniker": "Resturants\\ViewModels\\MenuVM\\UpdateMenuVM.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\ViewModels\\MenuVM\\UpdateMenuVM.cs",
+              "RelativeToolTip": "Resturants\\ViewModels\\MenuVM\\UpdateMenuVM.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA+wAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T09:47:35.575Z"
+              "WhenOpened": "2025-06-15T20:13:52.077Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 25,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Resturants\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Resturants\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-12T14:26:30.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Resturants\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Resturants\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-12T14:27:25.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "HomeVM.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\ViewModels\\HomeVM.cs",
+              "RelativeDocumentMoniker": "Resturants\\ViewModels\\HomeVM.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\ViewModels\\HomeVM.cs",
+              "RelativeToolTip": "Resturants\\ViewModels\\HomeVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T14:25:14.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Resturants\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Resturants\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T14:25:11.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "20250615211020_Table.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615211020_Table.cs",
+              "RelativeDocumentMoniker": "Resturants\\Migrations\\20250615211020_Table.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615211020_Table.cs",
+              "RelativeToolTip": "Resturants\\Migrations\\20250615211020_Table.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T21:10:20.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "20250615210113_FixChefMenuCascade.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615210113_FixChefMenuCascade.cs",
+              "RelativeDocumentMoniker": "Resturants\\Migrations\\20250615210113_FixChefMenuCascade.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615210113_FixChefMenuCascade.cs",
+              "RelativeToolTip": "Resturants\\Migrations\\20250615210113_FixChefMenuCascade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T21:01:13.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "20250615205427_FixChefMenuCascade.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615205427_FixChefMenuCascade.cs",
+              "RelativeDocumentMoniker": "Resturants\\Migrations\\20250615205427_FixChefMenuCascade.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615205427_FixChefMenuCascade.cs",
+              "RelativeToolTip": "Resturants\\Migrations\\20250615205427_FixChefMenuCascade.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T20:54:27.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "20250615205208_FixChefMenuCascade.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615205208_FixChefMenuCascade.cs",
+              "RelativeDocumentMoniker": "Resturants\\Migrations\\20250615205208_FixChefMenuCascade.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615205208_FixChefMenuCascade.cs",
+              "RelativeToolTip": "Resturants\\Migrations\\20250615205208_FixChefMenuCascade.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T20:52:08.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20250615191640_createImage.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615191640_createImage.cs",
+              "RelativeDocumentMoniker": "Resturants\\Migrations\\20250615191640_createImage.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615191640_createImage.cs",
+              "RelativeToolTip": "Resturants\\Migrations\\20250615191640_createImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T19:16:40.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20250615204711_Table.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615204711_Table.cs",
+              "RelativeDocumentMoniker": "Resturants\\Migrations\\20250615204711_Table.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615204711_Table.cs",
+              "RelativeToolTip": "Resturants\\Migrations\\20250615204711_Table.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T20:47:12.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Resturants\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Resturants\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAGYBAAAAAAAAAAAAwHcBAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-11T07:37:06.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "FileValidator.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Utilites\\Extensions\\FileValidator.cs",
+              "RelativeDocumentMoniker": "Resturants\\Utilites\\Extensions\\FileValidator.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Utilites\\Extensions\\FileValidator.cs",
+              "RelativeToolTip": "Resturants\\Utilites\\Extensions\\FileValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T19:23:52.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "FileSize.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Utilites\\Enums\\FileSize.cs",
+              "RelativeDocumentMoniker": "Resturants\\Utilites\\Enums\\FileSize.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Utilites\\Enums\\FileSize.cs",
+              "RelativeToolTip": "Resturants\\Utilites\\Enums\\FileSize.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T19:25:02.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "20250615173913_changetable.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615173913_changetable.cs",
+              "RelativeDocumentMoniker": "Resturants\\Migrations\\20250615173913_changetable.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615173913_changetable.cs",
+              "RelativeToolTip": "Resturants\\Migrations\\20250615173913_changetable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T17:39:13.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "20250615172116_TableChefMeal.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615172116_TableChefMeal.cs",
+              "RelativeDocumentMoniker": "Resturants\\Migrations\\20250615172116_TableChefMeal.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615172116_TableChefMeal.cs",
+              "RelativeToolTip": "Resturants\\Migrations\\20250615172116_TableChefMeal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T17:21:17.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20250615164448_newTable.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615164448_newTable.cs",
+              "RelativeDocumentMoniker": "Resturants\\Migrations\\20250615164448_newTable.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250615164448_newTable.cs",
+              "RelativeToolTip": "Resturants\\Migrations\\20250615164448_newTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T16:44:49.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\appsettings.json",
               "RelativeDocumentMoniker": "Resturants\\appsettings.json",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\appsettings.json",
               "RelativeToolTip": "Resturants\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-11T07:35:36.567Z"
+              "WhenOpened": "2025-06-11T07:35:36.567Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 37,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Resturants\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Resturants\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAlwCAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-12T14:29:55.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Resturants\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Resturants\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-12T14:30:13.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "Resturants\\ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "Resturants\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-06-12T14:18:11.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "20250611113444_first.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250611113444_first.cs",
+              "RelativeDocumentMoniker": "Resturants\\Migrations\\20250611113444_first.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Migrations\\20250611113444_first.cs",
+              "RelativeToolTip": "Resturants\\Migrations\\20250611113444_first.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T11:34:44.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Resturants\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Resturants\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-11T07:34:56.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Models\\Base\\BaseEntity.cs",
               "RelativeDocumentMoniker": "Resturants\\Models\\Base\\BaseEntity.cs",
@@ -353,11 +814,12 @@
               "RelativeToolTip": "Resturants\\Models\\Base\\BaseEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T10:00:35.257Z"
+              "WhenOpened": "2025-06-11T10:00:35.257Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 43,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Resturants\\Views\\Shared\\_Layout.cshtml",
@@ -365,11 +827,12 @@
               "RelativeToolTip": "Resturants\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-11T07:37:19.495Z"
+              "WhenOpened": "2025-06-11T07:37:19.495Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 44,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Resturants\\Resturants\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Resturants\\Views\\_ViewStart.cshtml",
@@ -377,7 +840,8 @@
               "RelativeToolTip": "Resturants\\Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-11T07:34:58.657Z"
+              "WhenOpened": "2025-06-11T07:34:58.657Z",
+              "EditorCaption": ""
             }
           ]
         },
