@@ -6,11 +6,70 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Resturants.Migrations
 {
     /// <inheritdoc />
-    public partial class appUser : Migration
+    public partial class User : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropForeignKey(
+                name: "FK_ChefMeal_Chefs_ChefId",
+                table: "ChefMeal");
+
+            migrationBuilder.DropForeignKey(
+                name: "FK_ChefMeal_Menus_MealId",
+                table: "ChefMeal");
+
+            migrationBuilder.DropForeignKey(
+                name: "FK_SosialMedia_Chefs_ChefId",
+                table: "SosialMedia");
+
+            migrationBuilder.DropPrimaryKey(
+                name: "PK_ChefMeal",
+                table: "ChefMeal");
+
+            migrationBuilder.RenameTable(
+                name: "ChefMeal",
+                newName: "ChefMeals");
+
+            migrationBuilder.RenameIndex(
+                name: "IX_ChefMeal_MealId",
+                table: "ChefMeals",
+                newName: "IX_ChefMeals_MealId");
+
+            migrationBuilder.RenameIndex(
+                name: "IX_ChefMeal_ChefId",
+                table: "ChefMeals",
+                newName: "IX_ChefMeals_ChefId");
+
+            migrationBuilder.AlterColumn<int>(
+                name: "ChefId",
+                table: "SosialMedia",
+                type: "int",
+                nullable: true,
+                oldClrType: typeof(int),
+                oldType: "int");
+
+            migrationBuilder.AlterColumn<int>(
+                name: "MealId",
+                table: "ChefMeals",
+                type: "int",
+                nullable: true,
+                oldClrType: typeof(int),
+                oldType: "int");
+
+            migrationBuilder.AlterColumn<int>(
+                name: "ChefId",
+                table: "ChefMeals",
+                type: "int",
+                nullable: true,
+                oldClrType: typeof(int),
+                oldType: "int");
+
+            migrationBuilder.AddPrimaryKey(
+                name: "PK_ChefMeals",
+                table: "ChefMeals",
+                column: "Id");
+
             migrationBuilder.CreateTable(
                 name: "AspNetRoles",
                 columns: table => new
@@ -196,11 +255,44 @@ namespace Resturants.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_ChefMeals_Chefs_ChefId",
+                table: "ChefMeals",
+                column: "ChefId",
+                principalTable: "Chefs",
+                principalColumn: "Id");
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_ChefMeals_Menus_MealId",
+                table: "ChefMeals",
+                column: "MealId",
+                principalTable: "Menus",
+                principalColumn: "Id");
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_SosialMedia_Chefs_ChefId",
+                table: "SosialMedia",
+                column: "ChefId",
+                principalTable: "Chefs",
+                principalColumn: "Id");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropForeignKey(
+                name: "FK_ChefMeals_Chefs_ChefId",
+                table: "ChefMeals");
+
+            migrationBuilder.DropForeignKey(
+                name: "FK_ChefMeals_Menus_MealId",
+                table: "ChefMeals");
+
+            migrationBuilder.DropForeignKey(
+                name: "FK_SosialMedia_Chefs_ChefId",
+                table: "SosialMedia");
+
             migrationBuilder.DropTable(
                 name: "AspNetRoleClaims");
 
@@ -221,6 +313,83 @@ namespace Resturants.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropPrimaryKey(
+                name: "PK_ChefMeals",
+                table: "ChefMeals");
+
+            migrationBuilder.RenameTable(
+                name: "ChefMeals",
+                newName: "ChefMeal");
+
+            migrationBuilder.RenameIndex(
+                name: "IX_ChefMeals_MealId",
+                table: "ChefMeal",
+                newName: "IX_ChefMeal_MealId");
+
+            migrationBuilder.RenameIndex(
+                name: "IX_ChefMeals_ChefId",
+                table: "ChefMeal",
+                newName: "IX_ChefMeal_ChefId");
+
+            migrationBuilder.AlterColumn<int>(
+                name: "ChefId",
+                table: "SosialMedia",
+                type: "int",
+                nullable: false,
+                defaultValue: 0,
+                oldClrType: typeof(int),
+                oldType: "int",
+                oldNullable: true);
+
+            migrationBuilder.AlterColumn<int>(
+                name: "MealId",
+                table: "ChefMeal",
+                type: "int",
+                nullable: false,
+                defaultValue: 0,
+                oldClrType: typeof(int),
+                oldType: "int",
+                oldNullable: true);
+
+            migrationBuilder.AlterColumn<int>(
+                name: "ChefId",
+                table: "ChefMeal",
+                type: "int",
+                nullable: false,
+                defaultValue: 0,
+                oldClrType: typeof(int),
+                oldType: "int",
+                oldNullable: true);
+
+            migrationBuilder.AddPrimaryKey(
+                name: "PK_ChefMeal",
+                table: "ChefMeal",
+                column: "Id");
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_ChefMeal_Chefs_ChefId",
+                table: "ChefMeal",
+                column: "ChefId",
+                principalTable: "Chefs",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_ChefMeal_Menus_MealId",
+                table: "ChefMeal",
+                column: "MealId",
+                principalTable: "Menus",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_SosialMedia_Chefs_ChefId",
+                table: "SosialMedia",
+                column: "ChefId",
+                principalTable: "Chefs",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
         }
     }
 }

@@ -1,0 +1,228 @@
+﻿@using Resturants.Models
+		@model HomeVM
+<!-- Hero Section Start -->
+<section id="single-shop-section">
+	<div class="single-shop-section-img">
+		<div class="menupage-1-overlay"></div>
+		<div class="menupage-1-conten">
+			<h1 class="blog1-hero-txt1 wow fadeInDown" data-wow-duration="1s" data-wow-delay="2.5s">Single Dish</h1>
+		</div>
+	</div>
+
+	<div class="breadcrumb-section">
+		<div class="container">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item">
+					<a href="index.html">
+						<span class="home-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<mask id="mask0_564_5237" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+									<rect width="24" height="24" fill="white" />
+								</mask>
+								<g mask="url(#mask0_564_5237)">
+									<path d="M9.15722 20.7714V17.7047C9.1572 16.9246 9.79312 16.2908 10.581 16.2856H13.4671C14.2587 16.2856 14.9005 16.9209 14.9005 17.7047V17.7047V20.7809C14.9003 21.4432 15.4343 21.9845 16.103 22H18.0271C19.9451 22 21.5 20.4607 21.5 18.5618V18.5618V9.83784C21.4898 9.09083 21.1355 8.38935 20.538 7.93303L13.9577 2.6853C12.8049 1.77157 11.1662 1.77157 10.0134 2.6853L3.46203 7.94256C2.86226 8.39702 2.50739 9.09967 2.5 9.84736V18.5618C2.5 20.4607 4.05488 22 5.97291 22H7.89696C8.58235 22 9.13797 21.4499 9.13797 20.7714V20.7714" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</g>
+							</svg>
+						</span>Home
+					</a>
+				</li>
+				<li class="breadcrumb-item " aria-current="page">
+					<a href="menupage-1.html">Dinner</a>
+				</li>
+				<li class="breadcrumb-item active" aria-current="page">Chicken Biryani</li>
+			</ol>
+		</div>
+	</div>
+	<div class="menupage1-boder"></div>
+</section>
+<!-- Hero Section End -->
+<!-- Add To Cart Section Start -->
+<section id="single-shop-deatils-sec">
+	<div class="container ptb-100 line">
+		<span class="line-3"></span>
+		<span class="line-4"></span>
+		<span class="line-5"> </span>
+		<div class="single-shop-deatils-sec-full">
+			<div class="single-shop-left">
+				<div class="slider_section">
+					<div class="slider_full_section">
+						<div class="slider slider-for slider-top">
+							@foreach (Menu menu in Model.Menus)
+							{
+								<div class="slider_details_sec">
+									<img class="slider_img img-fluid " src="~/assets/images/@menu.Image" alt="slider_img">
+								</div>
+							}
+							
+						</div>
+						<div class="slider slider-nav slider-bottom">
+							@foreach (Menu menu in Model.Menus)
+							{
+								<div class="slider_details_sec1">
+									<img class="slider_img1" src="~/assets/images/@menu.Image" alt="slider_img">
+								</div>
+							}
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="single-shop-right">
+				<div class="single-shop-content1">
+					
+						<h2 class="single-shop-txt1">Name</h2>
+					
+					
+				</div>
+				<div class="single-shop-deatils">
+					<div class="single-shop-content2">
+						<span class="single-shop-txt2">Chef</span>
+						<span class="single-shop-txt3">Bobby Flay</span>
+					</div>
+					<div class="single-shop-content3">
+						<div>
+							<span><img src="~/assets/images/single-shop/star.svg" alt="star-img"></span>
+							<span><img src="~/assets/images/single-shop/star.svg" alt="star-img"></span>
+							<span><img src="~/assets/images/single-shop/star.svg" alt="star-img"></span>
+							<span><img src="~/assets/images/single-shop/star.svg" alt="star-img"></span>
+							<span><img src="~/assets/images/single-shop/star.svg" alt="star-img"></span>
+						</div>
+						<div>
+							<p class="single-shop-txt5">(10 Reviews)</p>
+						</div>
+					</div>
+				</div>
+				<div class="single-shop-content4">
+					
+					<h3 class="single-shop-txt6">$49</h3>
+					<p class="single-shop-txt7">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utm aliquip ex ea commodo consequat.</p>
+				</div>
+				<div class="va_quality">
+					<span>Quantity:</span>
+					<form>
+						<span id="minus1" class="sub">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<mask id="mask0_502_14353" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+									<path d="M0 0H24V24H0V0Z" fill="white" />
+								</mask>
+								<g mask="url(#mask0_502_14353)">
+									<path d="M5 11H19V13H5V11Z" fill="#99A9AD" />
+								</g>
+							</svg>
+						</span>
+						<input id="qty1" type="number" value="1" class="qty">
+						<span id="add1" class="add">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<mask id="mask0_502_14350" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+									<path d="M0 0H24V24H0V0Z" fill="white" />
+								</mask>
+								<g mask="url(#mask0_502_14350)">
+									<path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="#99A9AD" />
+								</g>
+							</svg>
+						</span>
+					</form>
+					<a href="cart-view.html" class="add-cart-bnt">Add To Cart</a>
+				</div>
+				<div class="single-shop-content5">
+					<ul>
+						<li>
+							<a href="javascript:void(0);" class="single-shop-txt8 ">Description</a>
+							<span>
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+										<rect width="24" height="24" fill="white" />
+									</mask>
+									<g mask="url(#mask0_586_6074)">
+										<path d="M19 8.5L12 15.5L5 8.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</g>
+								</svg>
+							</span>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="single-shop-txt8 ">Reviews</a>
+							<span>
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+										<rect width="24" height="24" fill="white" />
+									</mask>
+									<g mask="url(#mask0_586_6074)">
+										<path d="M19 8.5L12 15.5L5 8.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</g>
+								</svg>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Add To Cart Section End -->
+<!-- Deatils  Section Start -->
+<section id="singleshop-deatils-section">
+	<div class="container line singleshop-deatils-section-mt">
+		<span class="line-3"></span>
+		<span class="line-4"></span>
+		<span class="line-5"> </span>
+		<div class="singleshop-deatils-section-full">
+			<div class="single-shop-top">
+				<h2 class="single-shop-heading wow fadeInUp" data-wow-duration="1s">You May Also Like</h2>
+			</div>
+			<div class="single-shop-bottom">
+				<div class="single-shop-bottom-full">
+					@foreach (Menu menu in Model.Menus)
+					{
+						<div class="single-shop-bottom-content wow fadeInUp" data-wow-duration="1.4s">
+							<div class="single-shop-bottom-img">
+								<img src="~/assets/images/@menu.Image" alt="food-img" class="img-fluid">
+								<div class="case-one_overlay"></div>
+							</div>
+							<div class="single-shop-content-bottom">
+								<div class="single-shop-content-bottom-full">
+									<span class="single-shop-name">@menu.Name</span>
+									<span class="single-shop-price">$@menu.Price</span>
+								</div>
+								<p class="single-shop-para">@menu.Description</p>
+							</div>
+						</div>
+					}
+					
+				
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Deatils  Section Start -->
+<!-- Testimonial Section Start -->
+<section id="menupage-1-testimonials-sec">
+	<div class="menupage-1-testimo-overlay"></div>
+	<div class="container">
+		<div class="home2-testimonials-sec-full">
+			<div class="home2-test-top">
+				<p class="homemenu-txt1 wow fadeInUp  " data-wow-duration="1s"><span class="pr-10"><img src="~/assets/images/Homepage1/yellow-star.png" alt="yellow-star"></span>TESTIMONIALS<span class="pf-10"><img src="~/assets/images/Homepage1/yellow-star.png" alt="yellow-star"></span></p>
+				<h2 class="homemenu-txt2 homemenu-txt22 wow fadeInUp " data-wow-duration="1.4s">The Reviews Of Customers When Coming To Our Restaurant!</h2>
+			</div>
+			<div class="home2-test-bottom wow fadeInUp" data-wow-duration="1.6s">
+				<div class="home2-test-bottom-full">
+					<div class="home2-test-slider">
+						<p class="home2-test-txt1">
+							“ This bermiz restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine
+							list and wonderful dessert. I recommend to everyone! I would like to come back here again and again.”
+						</p>
+						<p class="home2-test-txt2">PAUL SERGEO</p>
+					</div>
+					<div class="home2-test-slider">
+						<p class="home2-test-txt1">
+							“ This bermiz restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine
+							list and wonderful dessert. I recommend to everyone! I would like to come back here again and again.”
+						</p>
+						<p class="home2-test-txt2">PAUL SERGEO</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Testimonial Section End -->

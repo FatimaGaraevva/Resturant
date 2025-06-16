@@ -48,9 +48,8 @@
 										<li class="nav-item dropdown">
 											<a class="nav-link dropdown-toggle active" aria-current="page" href="javascript:void(0);">Home</a>
 											<ul class="dropdown-menu homepage-menu">
-												<li class="widget_media_image"><a class="dropdown-item active" href="index.html"><img src="~/assets/images/Homepage1/homepage-1.png" alt="menu-img"></a></li>
-												<li class="widget_media_image mega-menu-item-media_image-3"><a class="dropdown-item" href="homepage2.html"><img src="~/assets/images/Homepage1/homepage-2.png" alt="menu-img"></a></li>
-												<li class="widget_media_image mega-menu-item-media_image-6"><a class="dropdown-item" href="homepage3.html"><img src="~/assets/images/Homepage1/homepage-3.jpg" alt="menu-img"></a></li>
+												<li class="widget_media_image"><a asp-controller="Home" class="dropdown-item active"><img src="~/assets/images/Homepage1/homepage-1.png" alt="menu-img"></a></li>
+												
 											</ul>
 										</li>
 										<li class="nav-item dropdown">
@@ -61,30 +60,21 @@
 												<li class="has-sub-main">
 													<a class="dropdown-item" href="javascript:void(0);">Menu List<span class="arrow-right-angle"></span></a>
 													<ul class="has-sub-menu">
-														<li><a class="dropdown-item" href="menupage-1.html">Menu List 1</a></li>
-														<li><a class="dropdown-item" href="menupage-2.html">Menu List 2</a></li>
+														<li><a asp-controller="Menu" class="dropdown-item" >Menu List </a></li>
+														
 													</ul>
 												</li>
-												<li class="has-sub-main">
-													<a class="dropdown-item" href="javascript:void(0);">Menu Tab<span class="arrow-right-angle"></span></a>
-													<ul class="has-sub-menu">
-														<li><a class="dropdown-item" href="menupage-3.html">Menu Tab 1</a></li>
-														<li><a class="dropdown-item" href="menupage-4.html">Menu Tab 2</a></li>
-													</ul>
-												</li>
-												<li class="has-sub-main">
-													<a class="dropdown-item" href="menupage-5.html">Menu Section</a>
-												</li>
+											
+												
 												<li class="has-sub-main">
 													<a class="dropdown-item" href="javascript:void(0);">Menu Grid<span class="arrow-right-angle"></span></a>
 													<ul class="has-sub-menu">
 														<li><a class="dropdown-item" href="menupage-6.html">Menu Grid 1</a></li>
-														<li><a class="dropdown-item" href="menupage-7.html">Menu Grid 2</a></li>
-														<li><a class="dropdown-item" href="menupage-8.html">Menu Grid 3</a></li>
+														
 													</ul>
 												</li>
 												<li class="has-sub-main">
-													<a class="dropdown-item" href="single-shop.html">Single Shop</a>
+													<a asp-controller="Shop" class="dropdown-item"> Shop</a>
 												</li>
 											</ul>
 										</li>
@@ -96,46 +86,17 @@
 												<li class="has-sub-main">
 													<a class="dropdown-item" href="javascript:void(0);">Blog Standard<span class="arrow-right-angle"></span></a>
 													<ul class="has-sub-menu">
-														<li><a class="dropdown-item" href="blogpage-1.html">Blog Standard</a></li>
-														<li><a class="dropdown-item" href="blogpage-2.html">Blog Standard: Right Sidebar</a></li>
-														<li><a class="dropdown-item" href="blogpage-3.html">Blog Standard: Left Sidebar</a></li>
+														<li><a asp-controller="Blog" class="dropdown-item" >Blog Standard</a></li>
+														
 													</ul>
 												</li>
-												<li class="has-sub-main">
-													<a class="dropdown-item" href="blogpage-4.html">Blog List</a>
-												</li>
-												<li class="has-sub-main">
-													<a class="dropdown-item" href="javascript:void(0);">Blog Grid<span class="arrow-right-angle"></span></a>
-													<ul class="has-sub-menu">
-														<li><a class="dropdown-item" href="blogpage-5.html">Grid 1 + 2 Columns</a></li>
-														<li><a class="dropdown-item" href="blogpage-6.html">Grid 2 + 3 Columns</a></li>
-														<li><a class="dropdown-item" href="blogpage-7.html">Grid 3 + 3 Columns</a></li>
-														<li><a class="dropdown-item" href="blogpage-8.html">Grid4 + 2 Columns + Right Sidebar</a></li>
-														<li><a class="dropdown-item" href="blogpage-9.html">Grid4 + 2 Columns + Left Sidebar</a></li>
-														<li><a class="dropdown-item" href="blogpage-10.html">Grid5 + 2 Columns + Right Sidebar</a></li>
-														<li><a class="dropdown-item" href="blogpage-11.html">Grid5 + 2 Columns + Left Sidebar</a></li>
-													</ul>
-												</li>
-												<li class="has-sub-main">
-													<a class="dropdown-item" href="javascript:void(0);">Blog Masonry<span class="arrow-right-angle"></span></a>
-													<ul class="has-sub-menu">
-														<li><a class="dropdown-item" href="blogpage-12.html">Blog Masonry 1</a></li>
-														<li><a class="dropdown-item" href="blogpage-13.html">Blog Masonry 2</a></li>
-													</ul>
-												</li>
+												
+											
 												<li class="has-sub-main">
 													<a class="dropdown-item" href="javascript:void(0);">Single Blog<span class="arrow-right-angle"></span></a>
 													<ul class="has-sub-menu">
-														<li><a class="dropdown-item" href="single-blogpage1.html">Single Blog Standard: Right Sidebar</a></li>
-														<li><a class="dropdown-item" href="single-blogpage6.html">Single Blog Standard: Left Sidebar</a></li>
-														<li><a class="dropdown-item" href="single-blogpage2.html">Quote: Right Sidebar</a></li>
-														<li><a class="dropdown-item" href="single-blogpage7.html">Quote: Left Sidebar</a></li>
-														<li><a class="dropdown-item" href="single-blogpage3.html">Link: Right Sidebar</a></li>
-														<li><a class="dropdown-item" href="single-blogpage8.html">Link: Left Sidebar</a></li>
-														<li><a class="dropdown-item" href="single-blogpage4.html">Slider: Right Sidebar</a></li>
-														<li><a class="dropdown-item" href="single-blogpage9.html">Slider: Left Sidebar</a></li>
-														<li><a class="dropdown-item" href="single-blogpage5.html">Video: Right Sidebar</a></li>
-														<li><a class="dropdown-item" href="single-blogpage10.html">Video: Left Sidebar</a></li>
+														
+														<li><a asp-controller="BlogVideo" class="dropdown-item" >Video</a></li>
 													</ul>
 												</li>
 											</ul>
@@ -148,9 +109,8 @@
 												<li class="has-sub-main">
 													<a class="dropdown-item" href="javascript:void(0);">Our Chefs<span class="arrow-right-angle"></span></a>
 													<ul class="has-sub-menu">
-														<li><a class="dropdown-item" href="chefspage1.html">Our Chefs 1</a></li>
-														<li><a class="dropdown-item" href="chefspage2.html">Our Chefs 2</a></li>
-														<li><a class="dropdown-item" href="chefspage3.html">Our Chefs 3</a></li>
+														<li><a asp-controller="Chef" class="dropdown-item" >Our Chefs </a></li>
+														
 														<li><a class="dropdown-item" href="single-chefs-deatail-page.html">Single Chefs Details</a></li>
 													</ul>
 												</li>

@@ -92,7 +92,12 @@ wwwroot\assets\css\style.css
 wwwroot\assets\images\404-error\404-img.svg
 wwwroot\assets\images\404-error\header-img.png
 wwwroot\assets\images\404-error\Union.png
+wwwroot\assets\images\about-1.png
 wwwroot\assets\images\about-us\header-img.png
+wwwroot\assets\images\blog-1.png
+wwwroot\assets\images\blog-2.png
+wwwroot\assets\images\blog-3.png
+wwwroot\assets\images\blog-4.png
 wwwroot\assets\images\blogpage12\blog-2.png
 wwwroot\assets\images\blogpage12\blog-4.png
 wwwroot\assets\images\blogpage12\blog-6.png
@@ -177,6 +182,9 @@ wwwroot\assets\images\coming-soon\logo.png
 wwwroot\assets\images\coming-soon\pinterest.svg
 wwwroot\assets\images\coming-soon\twitter.svg
 wwwroot\assets\images\coming-soon\youtube.svg
+wwwroot\assets\images\comment-1.png
+wwwroot\assets\images\comment-2.png
+wwwroot\assets\images\comment-3.png
 wwwroot\assets\images\contact-us\contact-1.png
 wwwroot\assets\images\contact-us\contact-2.png
 wwwroot\assets\images\contact-us\contact-bg.png
@@ -372,6 +380,14 @@ wwwroot\assets\images\menupage-8\menu-6.png
 wwwroot\assets\images\menupage-8\menu-7.png
 wwwroot\assets\images\menupage-8\menu-8.png
 wwwroot\assets\images\menupage-8\menu-9.png
+wwwroot\assets\images\mobile-img.png
+wwwroot\assets\images\post-1.png
+wwwroot\assets\images\post-2.png
+wwwroot\assets\images\post-3.png
+wwwroot\assets\images\post-4.png
+wwwroot\assets\images\post-5.png
+wwwroot\assets\images\related-1.png
+wwwroot\assets\images\related-2.png
 wwwroot\assets\images\reservation\header-img.png
 wwwroot\assets\images\reservation\table-img.png
 wwwroot\assets\images\restaurant-1.png

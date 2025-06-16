@@ -12,8 +12,8 @@ using Resturants.DAL;
 namespace Resturants.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250615223927_appUser")]
-    partial class appUser
+    [Migration("20250616081711_User")]
+    partial class User
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -272,10 +272,10 @@ namespace Resturants.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("ChefId")
+                    b.Property<int?>("ChefId")
                         .HasColumnType("int");
 
-                    b.Property<int>("MealId")
+                    b.Property<int?>("MealId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -344,7 +344,7 @@ namespace Resturants.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("ChefId")
+                    b.Property<int?>("ChefId")
                         .HasColumnType("int");
 
                     b.Property<string>("Link")
@@ -417,15 +417,11 @@ namespace Resturants.Migrations
                 {
                     b.HasOne("Resturants.Models.Chef", "Chef")
                         .WithMany("ChefMeals")
-                        .HasForeignKey("ChefId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ChefId");
 
                     b.HasOne("Resturants.Models.Menu", "Meal")
                         .WithMany("ChefMeals")
-                        .HasForeignKey("MealId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("MealId");
 
                     b.Navigation("Chef");
 
@@ -447,9 +443,7 @@ namespace Resturants.Migrations
                 {
                     b.HasOne("Resturants.Models.Chef", "Chef")
                         .WithMany("SosialMedias")
-                        .HasForeignKey("ChefId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ChefId");
 
                     b.Navigation("Chef");
                 });

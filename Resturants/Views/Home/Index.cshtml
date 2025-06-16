@@ -2,6 +2,7 @@
 	@model HomeVM	
 <!-- Hero Section Start -->
 
+
 <section id="hero-section">
 	<div class="container line index-hero-tb">
 		<span class="line-3"></span>
@@ -29,7 +30,7 @@
 							</div>
 						</div>
 						<div class="dicover-menu-btn">
-							<a href="#Homepage1-menu-section">Discover Menu</a>
+							<a asp-controller="Menu" >Discover Menu</a>
 						</div>
 					</div>
 					<div class="hero-right" data-aos="fade-left" data-aos-duration="1000">
@@ -509,150 +510,37 @@
 
 	<div class="gallery-food-slider" id="gallery">
 		<div class="swiper-wrapper gallery-item-sec">
-			<div class="swiper-slide gallery-slide">
-				<div class="gallery-item">
-					<a class="gallery-popup" href="~/assets/images/gallery-1.png" data-caption="Kebab" data-width="600" data-height="800">
-						<img src="~/assets/images/gallery-1.png" class="img-fluid" alt="gallery item">
-						<div class="content-overlay-home2"></div>
-					</a>
+			@foreach (Menu menu in Model.Menus)
+			{
+				<div class="swiper-slide gallery-slide">
+					<div class="gallery-item">
+						<a class="gallery-popup" href="~/assets/images/@menu.Image" data-caption="Kebab" data-width="600" data-height="800">
+							<img src="~/assets/images/gallery-1.png" class="img-fluid" alt="gallery item">
+							<div class="content-overlay-home2"></div>
+						</a>
+					</div>
+					<div class="home2-gallery-overlay fadeIn-bottom fadeIn-right">
+						<a class="gallery-popup" href="~/assets/images/@menu.Image" data-caption="Kebab" data-width="600" data-height="800">
+							<p class="gallery-overlay-txt1">Kebab</p>
+							<div class="home2-search-icon">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+										<rect width="40" height="40" fill="white"></rect>
+									</mask>
+									<g mask="url(#mask0_540_5055)">
+										<circle cx="19.6111" cy="19.6108" r="14.9809" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+										<path d="M30.0305 30.8086L35.9039 36.6667" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									</g>
+								</svg>
+							</div>
+						</a>
+					</div>
 				</div>
-				<div class="home2-gallery-overlay fadeIn-bottom fadeIn-right">
-					<a class="gallery-popup" href="~/assets/images/gallery-1.png" data-caption="Kebab" data-width="600" data-height="800">
-						<p class="gallery-overlay-txt1">Kebab</p>
-						<div class="home2-search-icon">
-							<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
-									<rect width="40" height="40" fill="white"></rect>
-								</mask>
-								<g mask="url(#mask0_540_5055)">
-									<circle cx="19.6111" cy="19.6108" r="14.9809" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
-									<path d="M30.0305 30.8086L35.9039 36.6667" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-								</g>
-							</svg>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="swiper-slide gallery-slide">
-				<div class="gallery-item">
-					<a class="gallery-popup" href="~/assets/images/gallery-2.png" data-caption="Finger Roll" data-width="600" data-height="800">
-						<img src="~/assets/images/gallery-2.png" class="img-fluid" alt="gallery item">
-						<div class="content-overlay-home2"></div>
-					</a>
-				</div>
-				<div class="home2-gallery-overlay fadeIn-bottom fadeIn-right">
-					<a class="gallery-popup" href="~/assets/images/gallery-2.png" data-caption="Finger Roll" data-width="600" data-height="800">
-						<p class="gallery-overlay-txt1">Finger Roll</p>
-						<div class="home2-search-icon">
-							<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
-									<rect width="40" height="40" fill="white"></rect>
-								</mask>
-								<g mask="url(#mask0_540_5055)">
-									<circle cx="19.6111" cy="19.6108" r="14.9809" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
-									<path d="M30.0305 30.8086L35.9039 36.6667" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-								</g>
-							</svg>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="swiper-slide gallery-slide">
-				<div class="gallery-item">
-					<a class="gallery-popup" href="~/assets/images/gallery-3.png" data-caption="Chicken" data-width="600" data-height="800">
-						<img src="~/assets/images/gallery-3.png" class="img-fluid" alt="gallery item">
-						<div class="content-overlay-home2"></div>
-					</a>
-				</div>
-				<div class="home2-gallery-overlay fadeIn-bottom fadeIn-right">
-					<a class="gallery-popup" href="~/assets/images/gallery-3.png" data-caption="Chicken" data-width="600" data-height="800">
-						<p class="gallery-overlay-txt1">Chicken</p>
-						<div class="home2-search-icon">
-							<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
-									<rect width="40" height="40" fill="white"></rect>
-								</mask>
-								<g mask="url(#mask0_540_5055)">
-									<circle cx="19.6111" cy="19.6108" r="14.9809" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
-									<path d="M30.0305 30.8086L35.9039 36.6667" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-								</g>
-							</svg>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="swiper-slide gallery-slide">
-				<div class="gallery-item">
-					<a class="gallery-popup" href="~/assets/images/gallery-4.png" data-caption="Pasta" data-width="600" data-height="800">
-						<img src="~/assets/images/gallery-4.png" class="img-fluid" alt="gallery item">
-						<div class="content-overlay-home2"></div>
-					</a>
-				</div>
-				<div class="home2-gallery-overlay fadeIn-bottom fadeIn-right">
-					<a class="gallery-popup" href="~/assets/images/gallery-4.png" data-caption="Pasta" data-width="600" data-height="800">
-						<p class="gallery-overlay-txt1">Pasta</p>
-						<div class="home2-search-icon">
-							<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
-									<rect width="40" height="40" fill="white"></rect>
-								</mask>
-								<g mask="url(#mask0_540_5055)">
-									<circle cx="19.6111" cy="19.6108" r="14.9809" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
-									<path d="M30.0305 30.8086L35.9039 36.6667" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-								</g>
-							</svg>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="swiper-slide gallery-slide">
-				<div class="gallery-item">
-					<a class="gallery-popup" href="~/assets/images/gallery-5.png" data-caption="Roll" data-width="600" data-height="800">
-						<img src="~/assets/images/gallery-5.png" class="img-fluid" alt="gallery item">
-						<div class="content-overlay-home2"></div>
-					</a>
-				</div>
-				<div class="home2-gallery-overlay fadeIn-bottom fadeIn-right">
-					<a class="gallery-popup" href="~/assets/images/gallery-5.png" data-caption="Roll" data-width="600" data-height="800">
-						<p class="gallery-overlay-txt1">Roll</p>
-						<div class="home2-search-icon">
-							<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
-									<rect width="40" height="40" fill="white"></rect>
-								</mask>
-								<g mask="url(#mask0_540_5055)">
-									<circle cx="19.6111" cy="19.6108" r="14.9809" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
-									<path d="M30.0305 30.8086L35.9039 36.6667" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-								</g>
-							</svg>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="swiper-slide gallery-slide">
-				<div class="gallery-item">
-					<a class="gallery-popup" href="~/assets/images/gallery-1.png" data-caption="Kebab" data-width="600" data-height="800">
-						<img src="~/assets/images/gallery-1.png" class="img-fluid" alt="gallery item">
-						<div class="content-overlay-home2"></div>
-					</a>
-				</div>
-				<div class="home2-gallery-overlay fadeIn-bottom fadeIn-right">
-					<a class="gallery-popup" href="~/assets/images/gallery-1.png" data-caption="Kebab" data-width="600" data-height="800">
-						<p class="gallery-overlay-txt1">Kebab</p>
-						<div class="home2-search-icon">
-							<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
-									<rect width="40" height="40" fill="white"></rect>
-								</mask>
-								<g mask="url(#mask0_540_5055)">
-									<circle cx="19.6111" cy="19.6108" r="14.9809" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
-									<path d="M30.0305 30.8086L35.9039 36.6667" stroke="#0B1315" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-								</g>
-							</svg>
-						</div>
-					</a>
-				</div>
-			</div>
+				
+			}
+
+			
+			
 		</div>
 	</div>
 	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">

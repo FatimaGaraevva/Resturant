@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
+
 using Resturants.Models;
 using Resturants.Utilites.Enums;
 using Resturants.ViewModels.User;
@@ -12,12 +12,9 @@ namespace Resturants.Controllers
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
-        private readonly RoleManager<IdentityRole> _roleManager;
+        private RoleManager<IdentityRole> _roleManager;
 
-        public AccountController
-            (UserManager<AppUser> userManager,
-            SignInManager<AppUser> signInManager,
-            RoleManager<IdentityRole> roleManager)
+        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -36,24 +33,25 @@ namespace Resturants.Controllers
             }
             AppUser user = new AppUser
             {
+                UserName = registerVM.UserName,
+                Email = registerVM.Email,
                 Name = registerVM.Name,
                 Surname = registerVM.Surname,
-                UserName = registerVM.UserName,
-                Email = registerVM.Email
-
             };
-            IdentityResult result = await _userManager.CreateAsync(user, registerVM.Password);
+            var result = await _userManager.CreateAsync(user, registerVM.Password);
             if (!result.Succeeded)
             {
-                foreach (IdentityError error in result.Errors)
+                foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
-
                 }
                 return View();
+
             }
             await _signInManager.SignInAsync(user, false);
-            return RedirectToAction(nameof(HomeController.Index), "HomeController");
+            return RedirectToAction("Index", "Home");
+
+
 
         }
         public IActionResult Login()
@@ -63,35 +61,37 @@ namespace Resturants.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginVM loginVM, string? returnUrl)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 return View();
             }
-            AppUser user = await _userManager.Users.FirstOrDefaultAsync(u => u.UserName == loginVM.UsernameOrEmail || u.Email == loginVM.UsernameOrEmail);
-            if (user is null)
+            AppUser user = await _userManager.Users.FirstOrDefaultAsync(u => u.Name == loginVM.UserNameOrEmail || u.Email == loginVM.UserNameOrEmail);
+            if (user == null)
             {
-                ModelState.AddModelError(string.Empty, "Username,Email or Password is incorrect");
+                ModelState.AddModelError(string.Empty, "AD VE YA PASWWOR SEHVDI");
                 return View();
 
             }
-            var result = await _signInManager.PasswordSignInAsync(user, loginVM.Password, loginVM.IsPersistent, true);
+            var result = await _signInManager.PasswordSignInAsync(user, loginVM.Password, loginVM.RememberMe, true);
             if (result.IsLockedOut)
             {
-                ModelState.AddModelError(string.Empty, "Bloklanibsiz 10 dq sonra yene cehd edin");
-            }
-            if (!result.Succeeded)
-            {
-                ModelState.AddModelError(string.Empty, "Username,Email or Password is incorrect");
+                ModelState.AddModelError(string.Empty, "Bloklanibsiz tezden ceht edersiz");
                 return View();
             }
-            await _userManager.AddToRoleAsync(user, UserRole.Member.ToString());
-            await _signInManager.SignInAsync(user, false);
+            
+            if (!result.Succeeded)
+            {
+                ModelState.AddModelError(string.Empty, "AD VE YA PASWWOR SEHVDI");
+                return View();
+            }
+            //await _userManager.AddToRoleAsync(user, );
+
+            await _signInManager.SignInAsync(user,loginVM.RememberMe );
+            
             if (returnUrl is null)
             {
                 return RedirectToAction("Index", "Home");
-
             }
-            //return RedirectToAction("Index", "Home");
             return Redirect(returnUrl);
 
 
@@ -99,11 +99,11 @@ namespace Resturants.Controllers
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
-            return RedirectToAction("index", "Home");
+            return RedirectToAction("Index", "Home");
         }
-        public async Task<IActionResult> CreatedRoles()
+        public async Task<IActionResult> CreateRole()
         {
-            foreach (UserRole role in Enum.GetValues(typeof(UserRole)))
+            foreach (var role in Enum.GetValues(typeof(UserRole)))
             {
                 if (!await _roleManager.RoleExistsAsync(role.ToString()))
                 {
@@ -112,6 +112,7 @@ namespace Resturants.Controllers
                         Name = role.ToString()
                     });
                 }
+
             }
             return RedirectToAction("Index", "Home");
         }
