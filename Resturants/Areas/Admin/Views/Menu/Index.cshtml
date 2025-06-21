@@ -19,10 +19,10 @@
                                 <th>Image</th>
                                 <th>Name</th>
                                 <th>Price</th>
-                                <th>Description</th>
+                               
                                 <th>Rating</th>
                                 <th>Available</th>
-                                <th>Chef</th>
+                               
                                 <th>Settings</th>
                             </tr>
                         </thead>
@@ -37,14 +37,14 @@
                                     </td>
                                     <td>@meal.Name</td>
                                     <td>@meal.Price.ToString("C")</td>
-                                    <td>@meal.Description</td>
+                                   
                                     <td>
                                         @(meal.AverageRating.HasValue? meal.AverageRating.Value.ToString("0.0") : "N/A")
                                     </td>
                                     <td>
                                         @(meal.IsAvailable ? "Yes" : "No")
                                     </td>
-                                    <td>@meal.ChefFullName</td>
+                                    
                                     <td>
                                         <a asp-action="update" asp-route-id="@meal.Id" class="btn btn-warning"><i class="mdi mdi-pencil"></i></a>
                                         <a asp-action="delete" asp-route-id="@meal.Id" class="btn btn-danger"><i class="mdi mdi-delete"></i></a>

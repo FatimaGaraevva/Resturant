@@ -1,0 +1,11 @@
+﻿
+@model CreateChefVM
+<form asp-action="Create" method="post" enctype="multipart/form-data">
+    <input asp-for="Name" class="form-control" placeholder="Name" />
+    <input asp-for="Surname" class="form-control" placeholder="Surname" />
+    <input asp-for="Specialization" class="form-control" placeholder="Specialization" />
+    <textarea asp-for="Description" class="form-control" placeholder="Description"></textarea>
+    <input asp-for="Photo" type="file" class="form-control" />
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+

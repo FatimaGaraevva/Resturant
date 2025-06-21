@@ -36,9 +36,10 @@
                     </div>
 
                     <div class="form-group">
-                        <label asp-for="Description">Description</label>
-                        <textarea asp-for="Description" rows="7" class="form-control" placeholder="Description"></textarea>
-                        <span class="text-danger" asp-validation-for="Description"></span>
+                        <label asp-for="SelectedIngredientIds">Ingredients</label>
+                        <select asp-for="SelectedIngredientIds" class="form-control" asp-items="Model.AllIngredients" multiple="multiple">
+                        </select>
+                        <span class="text-danger" asp-validation-for="SelectedIngredientIds"></span>
                     </div>
 
                     <button type="submit" class="btn btn-primary me-2">Submit</button>

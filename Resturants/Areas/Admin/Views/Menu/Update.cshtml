@@ -1,24 +1,41 @@
 ﻿@using Resturants.ViewModels.MealVM
 @model UpdateMenuVM
-<form asp-action="Update"  method="post" enctype="multipart/form-data" class="forms-sample">
+<form asp-action="Update" method="post" enctype="multipart/form-data" class="forms-sample">
+   
     <div class="form-group">
         <img style="width:200px; height:150px;" src="~/assets/images/@Model.ExistingImage" />
         <input type="hidden" asp-for="ExistingImage" />
     </div>
 
+ 
     <div class="form-group">
-        <label asp-for="Photo">Main Image</label>
-        <input asp-for="Photo" accept="image/*" class="form-control" />
-        <span class="text-danger" asp-validation-for="Photo"></span>
+        <label asp-for="ImageFile">Main Image</label>
+        <input asp-for="ImageFile" accept="image/*" class="form-control" />
+        <span class="text-danger" asp-validation-for="ImageFile"></span>
     </div>
 
+ 
     <div class="form-group">
         <label asp-for="Name">Name</label>
         <input asp-for="Name" class="form-control" placeholder="Name" />
         <span class="text-danger" asp-validation-for="Name"></span>
     </div>
 
-    <!-- Digər inputlar -->
+
+    <div class="form-group">
+        <label asp-for="Price">Price</label>
+        <input asp-for="Price" class="form-control" placeholder="Price" />
+        <span class="text-danger" asp-validation-for="Price"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="SelectedIngredientIds">Ingredients</label>
+        <select asp-for="SelectedIngredientIds" class="form-control" asp-items="Model.AllIngredients" multiple="multiple">
+        </select>
+        <span class="text-danger" asp-validation-for="SelectedIngredientIds"></span>
+    </div>
+   
+    <input type="hidden" asp-for="Id" />
 
     <button type="submit" class="btn btn-primary me-2">Submit</button>
     <button type="button" class="btn btn-light" onclick="history.back()">Cancel</button>

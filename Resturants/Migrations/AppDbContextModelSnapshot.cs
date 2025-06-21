@@ -22,6 +22,21 @@ namespace Resturants.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("IngredientMenu", b =>
+                {
+                    b.Property<int>("IngredientsId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MenusId")
+                        .HasColumnType("int");
+
+                    b.HasKey("IngredientsId", "MenusId");
+
+                    b.HasIndex("MenusId");
+
+                    b.ToTable("IngredientMenu");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -284,6 +299,23 @@ namespace Resturants.Migrations
                     b.ToTable("ChefMeals");
                 });
 
+            modelBuilder.Entity("Resturants.Models.Ingredient", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Ingredients");
+                });
+
             modelBuilder.Entity("Resturants.Models.Menu", b =>
                 {
                     b.Property<int>("Id")
@@ -357,6 +389,21 @@ namespace Resturants.Migrations
                     b.HasIndex("ChefId");
 
                     b.ToTable("SosialMedia");
+                });
+
+            modelBuilder.Entity("IngredientMenu", b =>
+                {
+                    b.HasOne("Resturants.Models.Ingredient", null)
+                        .WithMany()
+                        .HasForeignKey("IngredientsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Resturants.Models.Menu", null)
+                        .WithMany()
+                        .HasForeignKey("MenusId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

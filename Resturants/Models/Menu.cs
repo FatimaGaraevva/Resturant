@@ -11,5 +11,6 @@
 
         public List<ChefMeal> ChefMeals { get; set; }
         public List<Rating> Ratings { get; set; }
+        public List<Ingredient> Ingredients { get; set; }
     }
 }

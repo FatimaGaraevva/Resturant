@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Resturants.DAL;
 using Resturants.Models;
@@ -24,7 +25,7 @@ namespace Resturants.Areas.Admin.Controllers
         public async Task<IActionResult> Index()
         {
             var meals = await _context.Menus
-              
+
                 .Include(m => m.Ratings)
                 .Select(m => new GetMenuVM
                 {
@@ -32,8 +33,8 @@ namespace Resturants.Areas.Admin.Controllers
                     Name = m.Name,
                     Image = m.Image,
                     Price = m.Price,
-                    Description = m.Description,
-                   
+
+
                     AverageRating = m.Ratings.Any() ? m.Ratings.Average(r => r.Stars) : null,
                     IsAvailable = true // Əgər IsAvailable modeli varsa, əvəz elə
                 })
@@ -42,108 +43,204 @@ namespace Resturants.Areas.Admin.Controllers
             return View(meals);
         }
 
-        public async Task<IActionResult> Create()
+        public IActionResult Create()
         {
-            return View(new CreateMenuVM
+            var viewModel = new CreateMenuVM
             {
-                Chefs = await _context.Chefs.ToListAsync()
-            });
+                Chefs = _context.Chefs.ToList(),
+                AllIngredients = _context.Ingredients.Select(i => new SelectListItem
+                {
+                    Value = i.Id.ToString(),
+                    Text = i.Name
+                }).ToList()
+            };
+
+            return View(viewModel);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(CreateMenuVM mealVM)
+        public async Task<IActionResult> Create(CreateMenuVM model)
         {
-            mealVM.Chefs = await _context.Chefs.ToListAsync();
-
             if (!ModelState.IsValid)
-                return View(mealVM);
-
-            if (mealVM.Photo is null || !mealVM.Photo.ValidateType("image/") || !mealVM.Photo.ValidateSize(FileSize.KB, 500))
             {
-                ModelState.AddModelError(nameof(CreateMenuVM.Photo), "Şəkil tipi və ölçüsü düzgün deyil.");
-                return View(mealVM);
+                model.Chefs = await _context.Chefs.ToListAsync();
+                model.AllIngredients = await _context.Ingredients.Select(i => new SelectListItem
+                {
+                    Value = i.Id.ToString(),
+                    Text = i.Name
+                }).ToListAsync();
+
+                return View(model);
             }
 
-            string fileName = await mealVM.Photo.CreateFileAsync(_env.WebRootPath, "assets", "images");
+            string savedImagePath = null;
 
-            Menu meal = new Menu
+            if (model.Photo != null && model.Photo.Length > 0)
             {
-                Name = mealVM.Name,
-                Price = mealVM.Price.Value,
-                Description = mealVM.Description,
-             
-                Image = fileName
+                var fileName = Path.GetFileNameWithoutExtension(model.Photo.FileName);
+                var extension = Path.GetExtension(model.Photo.FileName);
+                var uniqueFileName = $"{fileName}_{Guid.NewGuid()}{extension}";
+                var uploads = Path.Combine(_env.WebRootPath, "images", "menus");
+
+                if (!Directory.Exists(uploads))
+                    Directory.CreateDirectory(uploads);
+
+                var filePath = Path.Combine(uploads, uniqueFileName);
+
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    await model.Photo.CopyToAsync(fileStream);
+                }
+
+                savedImagePath = "/images/menus/" + uniqueFileName; // URL üçün yol
+            }
+
+            var menu = new Menu
+            {
+                Name = model.Name,
+                Price = model.Price!.Value,
+                Image = savedImagePath,
+                Description = "", // İstəsən burada doldura bilərsən
+                Ingredients = await _context.Ingredients
+                    .Where(i => model.SelectedIngredientIds.Contains(i.Id))
+                    .ToListAsync(),
+
+                ChefMeals = new List<ChefMeal>()
             };
 
-            await _context.Menus.AddAsync(meal);
+            if (model.ChefId.HasValue)
+            {
+                menu.ChefMeals.Add(new ChefMeal
+                {
+                    ChefId = model.ChefId.Value,
+                    Meal = menu
+                });
+            }
+
+            _context.Menus.Add(menu);
             await _context.SaveChangesAsync();
 
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index");
         }
 
+
+
+
+        // GET: Update
         public async Task<IActionResult> Update(int? id)
         {
-            if (id is null || id <= 0) return BadRequest();
+            if (id == null || id <= 0) return BadRequest();
 
-            Menu? meal = await _context.Menus.FindAsync(id);
-            if (meal is null) return NotFound();
+            var meal = await _context.Menus
+                .Include(m => m.Ingredients)
+                .FirstOrDefaultAsync(m => m.Id == id);
+
+            if (meal == null) return NotFound();
 
             var vm = new UpdateMenuVM
             {
+                Id = meal.Id,
                 Name = meal.Name,
                 Price = meal.Price,
-                Description = meal.Description,
-              
+
                 ExistingImage = meal.Image,
-                Chefs = await _context.Chefs.ToListAsync()
+                SelectedIngredientIds = meal.Ingredients.Select(i => i.Id).ToList(),
+                AllIngredients = await _context.Ingredients
+                    .Select(i => new SelectListItem
+                    {
+                        Value = i.Id.ToString(),
+                        Text = i.Name
+                    }).ToListAsync()
             };
 
             return View(vm);
         }
 
+
+
         [HttpPost]
         public async Task<IActionResult> Update(int? id, UpdateMenuVM vm)
         {
-            vm.Chefs = await _context.Chefs.ToListAsync();
+            if (id == null || id <= 0 || id != vm.Id) return BadRequest();
+
+            // Ingredients siyahısını hər halda doldur (validasiya və səhv halında)
+            vm.AllIngredients = await _context.Ingredients
+                .Select(i => new SelectListItem
+                {
+                    Value = i.Id.ToString(),
+                    Text = i.Name
+                }).ToListAsync();
+
             if (!ModelState.IsValid) return View(vm);
 
-            var meal = await _context.Menus.FindAsync(id);
-            if (meal is null) return NotFound();
+            var meal = await _context.Menus
+                .Include(m => m.Ingredients)
+                .FirstOrDefaultAsync(m => m.Id == id);
 
-            if (vm.Photo is not null)
+            if (meal == null) return NotFound();
+
+
+            if (vm.ImageFile != null)
             {
-                if (!vm.Photo.ValidateType("image/") || !vm.Photo.ValidateSize(FileSize.KB, 500))
+                if (!vm.ImageFile.ValidateType("image/") || !vm.ImageFile.ValidateSize(FileSize.KB, 500))
                 {
-                    ModelState.AddModelError(nameof(UpdateMenuVM.Photo), "File tipi və ölçüsü düzgün deyil.");
+                    ModelState.AddModelError(nameof(UpdateMenuVM.ImageFile), "Şəklin tipi və ya ölçüsü uyğun deyil.");
                     return View(vm);
                 }
 
-                string newImage = await vm.Photo.CreateFileAsync(_env.WebRootPath, "assets", "images" );
+
+                string newImage = await vm.ImageFile.CreateFileAsync(_env.WebRootPath, "assets", "images");
                 meal.Image.DeleteFile(_env.WebRootPath, "assets", "images");
                 meal.Image = newImage;
             }
 
+
             meal.Name = vm.Name;
-            meal.Price = vm.Price.Value;
-            meal.Description = vm.Description;
-            
+            meal.Price = vm.Price;
+
+
+
+            meal.Ingredients.Clear();
+
+
+            var selectedIngredients = await _context.Ingredients
+                .Where(i => vm.SelectedIngredientIds.Contains(i.Id))
+                .ToListAsync();
+
+            foreach (var ingredient in selectedIngredients)
+            {
+                meal.Ingredients.Add(ingredient);
+            }
 
             await _context.SaveChangesAsync();
+
             return RedirectToAction(nameof(Index));
         }
 
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id is null || id <= 0) return BadRequest();
+            if (id == null || id <= 0) return BadRequest();
 
-            var meal = await _context.Menus.FindAsync(id);
-            if (meal is null) return NotFound();
+            var meal = await _context.Menus
+                .Include(m => m.ChefMeals)
+                .Include(m => m.Ingredients)
+                .FirstOrDefaultAsync(m => m.Id == id);
 
-            meal.Image.DeleteFile(_env.WebRootPath, "assets", "images");
+            if (meal == null) return NotFound();
+
+            // Əvvəl əlaqəli qeydləri sil (və ya əlaqələri təmizlə)
+            meal.ChefMeals.Clear();       // ChefMeals əlaqələrini təmizlə
+            meal.Ingredients.Clear();     // Ingredients əlaqələrini təmizlə
+
+            // Şəkil varsa, faylı sil
+            meal.Image?.DeleteFile(_env.WebRootPath, "assets", "images");
+
             _context.Menus.Remove(meal);
+
             await _context.SaveChangesAsync();
 
             return RedirectToAction(nameof(Index));
         }
+
     }
 }

@@ -1,0 +1,12 @@
+﻿@model UpdateChefVM
+<form asp-action="Update" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Id" />
+    <img src="~/assets/images/@Model.ExistingImage" width="150" />
+    <input asp-for="ImageFile" type="file" class="form-control" />
+    <input asp-for="Name" class="form-control" />
+    <input asp-for="Surname" class="form-control" />
+    <input asp-for="Specialization" class="form-control" />
+    <textarea asp-for="Description" class="form-control"></textarea>
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+
