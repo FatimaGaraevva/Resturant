@@ -9,9 +9,9 @@
         public string Specialization { get; set; }
         public string Description { get; set; }
         //reletion
-        
-        public List<ChefMeal>? ChefMeals { get; set; }
-        public List<SosialMedia>? SosialMedias { get; set; }
+
+        public List<ChefMeal> ChefMeals { get; set; } = new();
+        public List<SocialMedia> SocialMedias { get; set; } = new();
 
 
     }

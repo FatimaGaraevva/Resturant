@@ -1,0 +1,30 @@
+﻿
+@model List<GetReservationVM>
+
+<h2>Gələn Rezervasiyalar</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Ad</th>
+            <th>Email</th>
+            <th>Telefon</th>
+            <th>Tarix</th>
+            <th>Əməliyyat</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var r in Model)
+        {
+            <tr>
+                <td>@r.FullName</td>
+                <td>@r.Email</td>
+                <td>@r.Phone</td>
+                <td>@r.ReservationDate.ToString("dd.MM.yyyy HH:mm")</td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@r.Id" class="btn btn-danger btn-sm">Sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

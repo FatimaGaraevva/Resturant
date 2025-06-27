@@ -6,6 +6,8 @@ namespace Resturants.ViewModels
     {
         public List<Menu> Menus { get; set; }
         public List<Chef> Chefs{ get; set; }
+        public Reservation Reservation { get; set; } = new Reservation();
+        
 
     }
 }

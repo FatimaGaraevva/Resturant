@@ -1,5 +1,7 @@
 ﻿@using Resturants.Models
-	@model HomeVM
+@model HomeVM
+
+
 <!-- Hero Section Start -->
 <section id="chefspage-1-section">
 	<div class="chefs1-section-img">
@@ -40,25 +42,25 @@
 		<span class="line-5"> </span>
 		<h2 class="d-none">Chefs Page</h2>
 		<h3 class="d-none">Chefs Details</h3>
+
 		<div class="chefspage1-team-section-full">
 			@foreach(Chef chef in Model.Chefs)
 			{
 				<div class="chefs1-team-slide wow fadeInUp" data-wow-duration="1s" data-wow-delay="3.5s">
 					<div class="content-overlay-team-home3">
 						<div class="content-overlay"></div>
-						<img src="assets/images/@chef.Image" alt="team-img" class="img-fluid w-100">
+						<img src="~/assets/images/@chef.Image" alt="team-img" class="img-fluid w-100">
 						<div class="content-details fadeIn-right">
-							<a href="https://www.facebook.com/" class="home3-team-overlay-content" target="_blank">@chef.SosialMedias</a>
-							<a href="https://www.instagram.com/" class="home3-team-overlay-content" target="_blank">@chef.SosialMedias</a>
-							<a href="https://twitter.com/" class="home3-team-overlay-content" target="_blank">@chef.SosialMedias</a>
+							<a href="https://www.facebook.com/" class="home3-team-overlay-content" target="_blank">Facebook</a>
+							<a href="https://www.instagram.com/" class="home3-team-overlay-content" target="_blank">Instagram</a>
+							<a href="https://twitter.com/" class="home3-team-overlay-content" target="_blank">Twitter</a>
 						</div>
 					</div>
 					<h4 class="home3-team-txt3">@chef.Name @chef.Surname</h4>
-					<p class="home3-team-txt4">@chef.Description</p>
+					<p class="home3-team-txt4">@chef.Specialization</p>
 				</div>
 			}
-			
-		
+
 		</div>
 	</div>
 </section>
@@ -69,7 +71,7 @@
 	<div class="container">
 		<div class="home2-testimonials-sec-full">
 			<div class="home2-test-top">
-				<p class="homemenu-txt1 wow fadeInUp  " data-wow-duration="1s"><span class="pr-10"><img src="assets/images/Homepage1/yellow-star.png" alt="yellow-star"></span>TESTIMONIALS<span class="pf-10"><img src="assets/images/Homepage1/yellow-star.png" alt="yellow-star"></span></p>
+				<p class="homemenu-txt1 wow fadeInUp  " data-wow-duration="1s"><span class="pr-10"><img src="~/assets/images/Homepage1/yellow-star.png" alt="yellow-star"></span>TESTIMONIALS<span class="pf-10"><img src="~/assets/images/Homepage1/yellow-star.png" alt="yellow-star"></span></p>
 				<h2 class="homemenu-txt2 homemenu-txt22 wow fadeInUp " data-wow-duration="1.4s">The Reviews Of Customers When Coming To Our Restaurant!</h2>
 			</div>
 			<div class="home2-test-bottom wow fadeInUp" data-wow-duration="1.6s">

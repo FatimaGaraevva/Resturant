@@ -23,7 +23,7 @@ namespace Resturants.Areas.Admin.Controllers
         public async Task<IActionResult> Index()
         {
             var chefs = await _context.Chefs
-                .Include(c => c.SosialMedias)
+                .Include(c => c.SocialMedias)
                 .Select(c => new ChefListItemVM
                 {
                     Id = c.Id,
@@ -31,8 +31,8 @@ namespace Resturants.Areas.Admin.Controllers
                     Image = c.Image,
                     Specialization = c.Specialization,
                     Description = c.Description,
-                    SocialMediaLinks = c.SosialMedias != null
-                        ? c.SosialMedias.Select(sm => sm.Link).ToList()
+                    SocialMediaLinks = c.SocialMedias != null
+                        ? c.SocialMedias.Select(sm => sm.Link).ToList()
                         : new List<string>()
                 })
                 .ToListAsync();
@@ -78,6 +78,25 @@ namespace Resturants.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
         // GET: /Chef/Update/5
+        public async Task<IActionResult> Update(int id)
+        {
+            var chef = await _context.Chefs.FindAsync(id);
+            if (chef == null) return NotFound();
+
+            var vm = new UpdateChefVM
+            {
+                Id = chef.Id,
+                Name = chef.Name,
+                Surname = chef.Surname,
+                Specialization = chef.Specialization,
+                Description = chef.Description,
+                ExistingImage = chef.Image // şəkil fayl adı
+            };
+
+            return View(vm);
+        }
+
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Update(UpdateChefVM vm)
@@ -87,7 +106,7 @@ namespace Resturants.Areas.Admin.Controllers
             var chef = await _context.Chefs.FindAsync(vm.Id);
             if (chef == null) return NotFound();
 
-            // Yeni şəkil varsa
+            // Yeni şəkil yüklənibsə
             if (vm.ImageFile is not null)
             {
                 if (!string.IsNullOrWhiteSpace(chef.Image))
@@ -107,34 +126,43 @@ namespace Resturants.Areas.Admin.Controllers
 
             return RedirectToAction(nameof(Index));
         }
-        // POST: /Chef/Delete/5
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public async Task<IActionResult> Delete(int id)
-        //{
-        //    var chef = await _context.Chefs
-        //        .Include(c => c.SosialMedias)
-        //        .FirstOrDefaultAsync(c => c.Id == id);
 
-        //    if (chef == null) return NotFound();
 
-        //    // Şəkil varsa sil
-        //    if (!string.IsNullOrWhiteSpace(chef.Image))
-        //    {
-        //        chef.Image.DeleteFile(_env.WebRootPath, "assets", "images");
-        //    }
 
-        //    // Sosial media bağlantılarını da sil
-        //    if (chef.SosialMedias != null && chef.SosialMedias.Any())
-        //    {
-        //        _context.SosialMedias.RemoveRange(chef.SosialMedias);
-        //    }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var chef = await _context.Chefs
+                .Include(c => c.SocialMedias)
+                .FirstOrDefaultAsync(c => c.Id == id);
 
-        //    _context.Chefs.Remove(chef);
-        //    await _context.SaveChangesAsync();
+            if (chef == null)
+            {
+                return NotFound();
+            }
 
-        //    return RedirectToAction(nameof(Index));
-        //}
+            // Şəkil varsa - sil
+            if (!string.IsNullOrWhiteSpace(chef.Image))
+            {
+                string imagePath = Path.Combine(_env.WebRootPath, "assets", "images", chef.Image);
+                if (System.IO.File.Exists(imagePath))
+                {
+                    System.IO.File.Delete(imagePath);
+                }
+            }
+
+            //Əlaqəli sosial media məlumatlarını sil
+            if (chef.SocialMedias?.Any() == true)
+            {
+                _context.SosialMedias.RemoveRange(chef.SocialMedias);
+            }
+
+            _context.Chefs.Remove(chef);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
 
     }
 }

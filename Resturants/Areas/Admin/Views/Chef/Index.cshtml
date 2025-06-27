@@ -18,7 +18,7 @@
                                 <th>Image</th>
                                 <th>Full Name</th>
                                 <th>Specialization</th>
-                                <th>Description</th>
+                                
                                 <th>Social</th>
                                 <th>Settings</th>
                             </tr>
@@ -34,7 +34,7 @@
                                     </td>
                                     <td>@chef.FullName</td>
                                     <td>@chef.Specialization</td>
-                                    <td>@chef.Description</td>
+                                    
                                     <td>
                                         @if (chef.SocialMediaLinks != null && chef.SocialMediaLinks.Any())
                                         {
@@ -49,10 +49,21 @@
                                         }
                                     </td>
                                     <td>
-                                        <a asp-action="Update" asp-route-id="@chef.Id" class="btn btn-warning"><i class="mdi mdi-pencil"></i></a>
-                                        <a asp-action="Delete" asp-route-id="@chef.Id" class="btn btn-danger"><i class="mdi mdi-delete"></i></a>
-                                        <a asp-action="Detail" asp-route-id="@chef.Id" class="btn btn-primary"><i class="mdi mdi-open-in-new"></i></a>
+                                        <a asp-action="Update" asp-route-id="@chef.Id" class="btn btn-warning">
+                                            <i class="mdi mdi-pencil"></i>
+                                        </a>
+
+                                        <form asp-action="Delete" asp-route-id="@chef.Id" method="post" style="display:inline;" onsubmit="return confirm('Bu aşpazı silmək istədiyinizə əminsiniz?')">
+                                            <button type="submit" class="btn btn-danger">
+                                                <i class="mdi mdi-delete"></i>
+                                            </button>
+                                        </form>
+
+                                        <a asp-action="Detail" asp-route-id="@chef.Id" class="btn btn-primary">
+                                            <i class="mdi mdi-open-in-new"></i>
+                                        </a>
                                     </td>
+
                                 </tr>
                             }
                         </tbody>

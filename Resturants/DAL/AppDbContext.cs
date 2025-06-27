@@ -12,7 +12,8 @@ namespace Resturants.DAL
         public DbSet<Rating> Ratings { get; set; }
         public DbSet<ChefMeal> ChefMeals { get; set; }
         public DbSet<Ingredient> Ingredients { get; set; }
-        public DbSet<SosialMedia> SosialMedias { get; set; }
+        public DbSet<SocialMedia> SosialMedias { get; set; }
+        public DbSet<Reservation> Reservations { get; set; }
 
 
 
