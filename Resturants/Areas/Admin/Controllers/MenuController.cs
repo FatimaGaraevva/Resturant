@@ -36,7 +36,7 @@ namespace Resturants.Areas.Admin.Controllers
 
 
                     AverageRating = m.Ratings.Any() ? m.Ratings.Average(r => r.Stars) : null,
-                    IsAvailable = true // Əgər IsAvailable modeli varsa, əvəz elə
+                    IsAvailable = true 
                 })
                 .ToListAsync();
 
@@ -92,7 +92,7 @@ namespace Resturants.Areas.Admin.Controllers
                     await model.Photo.CopyToAsync(fileStream);
                 }
 
-                savedImagePath = "/images/menus/" + uniqueFileName; // URL üçün yol
+                savedImagePath = "/images/menus/" + uniqueFileName; 
             }
 
             var menu = new Menu
@@ -100,7 +100,7 @@ namespace Resturants.Areas.Admin.Controllers
                 Name = model.Name,
                 Price = model.Price!.Value,
                 Image = savedImagePath,
-                Description = "", // İstəsən burada doldura bilərsən
+                Description = "", 
                 Ingredients = await _context.Ingredients
                     .Where(i => model.SelectedIngredientIds.Contains(i.Id))
                     .ToListAsync(),
@@ -126,7 +126,7 @@ namespace Resturants.Areas.Admin.Controllers
 
 
 
-        // GET: Update
+       
         public async Task<IActionResult> Update(int? id)
         {
             if (id == null || id <= 0) return BadRequest();

@@ -19,7 +19,7 @@ namespace Resturants.Areas.Admin.Controllers
             _env = env;
         }
 
-        // GET: /Chef/Index
+       
         public async Task<IActionResult> Index()
         {
             var chefs = await _context.Chefs
@@ -40,13 +40,13 @@ namespace Resturants.Areas.Admin.Controllers
             return View(chefs);
         }
 
-        // GET: /Chef/Create
+     
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: /Chef/Create
+       
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(CreateChefVM vm)
@@ -77,7 +77,7 @@ namespace Resturants.Areas.Admin.Controllers
 
             return RedirectToAction(nameof(Index));
         }
-        // GET: /Chef/Update/5
+        
         public async Task<IActionResult> Update(int id)
         {
             var chef = await _context.Chefs.FindAsync(id);
@@ -90,7 +90,7 @@ namespace Resturants.Areas.Admin.Controllers
                 Surname = chef.Surname,
                 Specialization = chef.Specialization,
                 Description = chef.Description,
-                ExistingImage = chef.Image // şəkil fayl adı
+                ExistingImage = chef.Image 
             };
 
             return View(vm);
@@ -142,7 +142,7 @@ namespace Resturants.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            // Şəkil varsa - sil
+            
             if (!string.IsNullOrWhiteSpace(chef.Image))
             {
                 string imagePath = Path.Combine(_env.WebRootPath, "assets", "images", chef.Image);
@@ -152,7 +152,7 @@ namespace Resturants.Areas.Admin.Controllers
                 }
             }
 
-            //Əlaqəli sosial media məlumatlarını sil
+            
             if (chef.SocialMedias?.Any() == true)
             {
                 _context.SosialMedias.RemoveRange(chef.SocialMedias);

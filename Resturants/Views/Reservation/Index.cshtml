@@ -2,12 +2,7 @@
 <!-- Hero Section Start -->
 
 <section id="reservation1-section">
-	<div class="reservation1-section-img">
-		<div class="menupage-1-overlay"></div>
-		<div class="menupage-1-conten">
-			<h1 class="menupage-1-hero-txt1 wow fadeInDown" data-wow-duration="1s" data-wow-delay="2.5s">Reservation</h1>
-		</div>
-	</div>
+	
 	<div class="breadcrumb-section">
 		<div class="container">
 			<ol class="breadcrumb">
@@ -46,56 +41,57 @@
 				<p class="reser-txt3-menu1">You can Call Us directly at <a href="tel:+01(234)5678899"><span class="menupage1-no">+01 (234) 567 8899</span></a></p>
 			</div>
 			<div class="reser-bottom-sec">
-				<form class="menupage1-form">
+				<form method="post" asp-controller="Reservation" asp-action="Book">
 					<div class="form-menupage1">
 						<div class="single-input-form-menupage1">
-							<input type="text" name="name" placeholder="Name" class="menupage1-form-custom name-icon">
+							<input type="text" name="Name" placeholder="Name" class="menupage1-form-custom name-icon">
 						</div>
 						<div class="single-input-form-menupage1">
-							<input type="email" name="email" placeholder="Email Address" class="menupage1-form-custom email-icon">
+							<input type="email" name="Email" placeholder="Email Address" class="menupage1-form-custom email-icon">
 						</div>
 						<div class="single-input-form-menupage1">
-							<input type="tel" name="number" placeholder="Phone Number" class="menupage1-form-custom mobile-icon">
+							<input type="tel" name="PhoneNumber" placeholder="Phone Number" class="menupage1-form-custom mobile-icon">
 						</div>
 						<div class="single-input-form-menupage1">
-							<select name="persons" class="menupage1-form-custom arrow-icon">
-								<option>1 Person</option>
-								<option>2 Persons</option>
-								<option>3 Persons</option>
-								<option>4 Persons</option>
-								<option>5 Persons</option>
-								<option>6 Persons</option>
-								<option>7 Persons</option>
+							<select name="NumberOfPeople" class="menupage1-form-custom arrow-icon">
+								<option value="1">1 Person</option>
+								<option value="2">2 Persons</option>
+								<option value="3">3 Persons</option>
+								<option value="4">4 Persons</option>
+								<option value="5">5 Persons</option>
+								<option value="6">6 Persons</option>
+								<option value="7">7 Persons</option>
 							</select>
 						</div>
 						<div class="single-input-form-menupage1 ">
-							<input type="text" id="datepicker" autocomplete="off" placeholder="dd/mm/yy" class="menupage1-form-custom arrow-icon">
+							<input type="text" name="Date" id="datepicker" autocomplete="off" placeholder="dd/mm/yy" class="menupage1-form-custom arrow-icon">
 						</div>
 						<div class="single-input-form-menupage1">
-							<select name="persons" class="menupage1-form-custom arrow-icon">
-								<option>08:00 am</option>
-								<option>09:00 am</option>
-								<option>10:00 am</option>
-								<option>11:00 am</option>
-								<option>12:00 pm</option>
-								<option>01:00 pm</option>
-								<option>02:00 pm</option>
-								<option>03:00 pm</option>
-								<option>04:00 pm</option>
-								<option>05:00 pm</option>
-								<option>06:00 pm</option>
-								<option>07:00 pm</option>
-								<option>08:00 pm</option>
-								<option>09:00 pm</option>
-								<option>10:00 pm</option>
+							<select name="Time" class="menupage1-form-custom arrow-icon">
+								<option value="08:00:00">08:00 am</option>
+								<option value="09:00:00">09:00 am</option>
+								<option value="10:00:00">10:00 am</option>
+								<option value="11:00:00">11:00 am</option>
+								<option value="12:00:00">12:00 pm</option>
+								<option value="13:00:00">01:00 pm</option>
+								<option value="14:00:00">02:00 pm</option>
+								<option value="15:00:00">03:00 pm</option>
+								<option value="16:00:00">04:00 pm</option>
+								<option value="17:00:00">05:00 pm</option>
+								<option value="18:00:00">06:00 pm</option>
+								<option value="19:00:00">07:00 pm</option>
+								<option value="20:00:00">08:00 pm</option>
+								<option value="21:00:00">09:00 pm</option>
+								<option value="22:00:00">10:00 pm</option>
 							</select>
 						</div>
 					</div>
 					<div class="menupage-1-book-now-btn">
-						<a href="javascript:void(0)">Book Now</a>
+						<button type="submit">Book Now</button>
 					</div>
 				</form>
 			</div>
+
 		</div>
 	</div>
 </section>
@@ -216,7 +212,7 @@
 						<p class="visit-no-txt">T:<a href="tel:1300748133" class="Visit-no">+1(234)567 8899</a></p>
 					</div>
 					<div class="direction-btn">
-						<a href="contact-us.html">Get Directions</a>
+						<a asp-controller="Contact">Get Directions</a>
 					</div>
 				</div>
 			</div>

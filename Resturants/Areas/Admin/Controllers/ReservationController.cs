@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Resturants.DAL;
-
+using Resturants.Interfaces;
 using Resturants.Models;
 using Resturants.ViewModels.ReservationVM;
 
@@ -11,13 +11,19 @@ namespace Resturants.Areas.Admin.Controllers
     public class ReservationController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly IEmailService _emailService;
 
-        public ReservationController(AppDbContext context)
+       
+
+
+      
+        public ReservationController(AppDbContext context, IEmailService emailService)
         {
             _context = context;
+            _emailService = emailService;
         }
 
-        // ✅ TASK 1: REZERVASİYA SİYAHISINI GÖSTƏR
+
         public async Task<IActionResult> Index()
         {
             var reservations = await _context.Reservations
@@ -35,7 +41,7 @@ namespace Resturants.Areas.Admin.Controllers
             return View(reservations);
         }
 
-        // ✅ TASK 2: REZERVASİYA DETALLARINI GÖSTƏR
+       
         public async Task<IActionResult> Details(int id)
         {
             var reservation = await _context.Reservations.FindAsync(id);
@@ -53,14 +59,14 @@ namespace Resturants.Areas.Admin.Controllers
             return View(vm);
         }
 
-        // ✅ TASK 3: YENİ REZERVASİYA YARAT (GET)
+      
         [HttpGet]
         public IActionResult Create()
         {
             return View(new CreateReservationVM());
         }
 
-        // ✅ TASK 4: YENİ REZERVASİYA YARAT (POST)
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(CreateReservationVM vm)
@@ -84,7 +90,7 @@ namespace Resturants.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // ✅ TASK 5: REZERVASİYA MƏLUMATLARINI REDAKTƏ ET (GET)
+       
         public async Task<IActionResult> Edit(int id)
         {
             var reservation = await _context.Reservations.FindAsync(id);
@@ -103,7 +109,7 @@ namespace Resturants.Areas.Admin.Controllers
             return View(vm);
         }
 
-        // ✅ TASK 6: REDAKTƏ EDİLMİŞ MƏLUMATLARI SAXLA (POST)
+       
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, CreateReservationVM vm)
@@ -127,7 +133,8 @@ namespace Resturants.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // ✅ TASK 7: REZERVASİYA SİL
+
+        [HttpPost]
         public async Task<IActionResult> Delete(int id)
         {
             var reservation = await _context.Reservations.FindAsync(id);
@@ -136,7 +143,13 @@ namespace Resturants.Areas.Admin.Controllers
             _context.Reservations.Remove(reservation);
             await _context.SaveChangesAsync();
 
-            return RedirectToAction(nameof(Index));
+            string subject = "Rezervasiyanız ləğv edildi";
+            string body = $"Salam {reservation.Name},<br/><br/>Üzr istəyirik, rezervasiyanız ləğv olundu.";
+
+            await _emailService.SendEmailAsync(reservation.Email, subject, body);
+
+            return RedirectToAction("Index"); // və ya admin panelinə qayıt
         }
+
     }
 }

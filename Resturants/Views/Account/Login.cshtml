@@ -1,73 +1,58 @@
-﻿@model LoginVM
+﻿@model Resturants.ViewModels.User.LoginVM
 @{
     Layout = null;
 }
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="az">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Majestic Admin</title>
-    <!-- plugins:css -->
-    <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="../../vendors/base/vendor.bundle.base.css">
-    <!-- endinject -->
-    <!-- plugin css for this page -->
-    <!-- End plugin css for this page -->
-    <!-- inject:css -->
-    <link rel="stylesheet" href="../../css/style.css">
-    <!-- endinject -->
-    <link rel="shortcut icon" href="../../images/favicon.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Restoran Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <style>
+        body {
+            background: url('/images/restaurant-bg.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .btn-login {
+            background-color: #a83232;
+            color: white;
+        }
+
+            .btn-login:hover {
+                background-color: #8b2a2a;
+            }
+    </style>
 </head>
-
 <body>
-    <div class="container-scroller">
-        <div class="container-fluid page-body-wrapper full-page-wrapper">
-            <div class="content-wrapper d-flex align-items-center auth px-0">
-                <div class="row w-100 mx-0">
-                    <div class="col-lg-4 mx-auto">
-                        <div class="auth-form-light text-left py-5 px-4 px-sm-5">
-
-                            <h4>Login Page</h4>
-
-                            <form method="post">
-                                <div class="form-group">
-                                    <input asp-for="UserNameOrEmail" class="form-control form-control-lg" placeholder="Username or Email">
-                                    <span asp-validation-for="UserNameOrEmail"></span>
-                                </div>
-                                <div class="form-group">
-                                    <input asp-for="Password" class="form-control form-control-lg" placeholder="Password">
-                                    <span asp-validation-for="Password"></span>
-                                </div>
-                                <div class="form-group">
-                                    <input asp-for="RememberMe" class="form-control form-control-lg" placeholder="RememberMe">
-
-                                </div>
-                                <div class="mb-2">
-                                    <button type="submit" class="btn btn-block btn-facebook auth-form-btn">
-                                        <i class="mdi mdi-facebook me-2"></i>Login
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="col-md-4 login-container">
+            <h3 class="text-center mb-4">Daxil ol</h3>
+            <form asp-action="Login" method="post">
+                <div class="mb-3">
+                    <label asp-for="UserNameOrEmail" class="form-label">İstifadəçi adı və ya Email</label>
+                    <input asp-for="UserNameOrEmail" class="form-control" placeholder="Email və ya username" />
+                    <span asp-validation-for="UserNameOrEmail" class="text-danger"></span>
                 </div>
-            </div>
-            <!-- content-wrapper ends -->
+                <div class="mb-3">
+                    <label asp-for="Password" class="form-label">Şifrə</label>
+                    <input asp-for="Password" class="form-control" placeholder="Şifrə" type="password" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-check mb-3">
+                    <input asp-for="RememberMe" class="form-check-input" />
+                    <label asp-for="RememberMe" class="form-check-label">Yadda saxla</label>
+                </div>
+                <button type="submit" class="btn btn-login w-100">Daxil ol</button>
+            </form>
         </div>
-        <!-- page-body-wrapper ends -->
     </div>
-    <!-- container-scroller -->
-    <!-- plugins:js -->
-    <script src="../../vendors/base/vendor.bundle.base.js"></script>
-    <!-- endinject -->
-    <!-- inject:js -->
-    <script src="../../js/off-canvas.js"></script>
-    <script src="../../js/hoverable-collapse.js"></script>
-    <script src="../../js/template.js"></script>
-    <!-- endinject -->
 </body>
-
 </html>

@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Resturants.DAL;
+using Resturants.Interfaces;
 using Resturants.Models;
+using Resturants.Services;
 
 namespace Resturants
 {
@@ -23,6 +25,8 @@ namespace Resturants
                 opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
             }
                );
+            builder.Services.AddScoped<IEmailService, EmailService>();
+
 
             var app = builder.Build();
 

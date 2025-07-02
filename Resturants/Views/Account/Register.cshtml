@@ -1,91 +1,75 @@
-﻿
-@model RegisterVM
-
+﻿@model Resturants.ViewModels.User.RegisterVM
 @{
     Layout = null;
 }
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="az">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Majestic Admin</title>
-    <!-- plugins:css -->
-    <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="../../vendors/base/vendor.bundle.base.css">
-    <!-- endinject -->
-    <!-- plugin css for this page -->
-    <!-- End plugin css for this page -->
-    <!-- inject:css -->
-    <link rel="stylesheet" href="../../css/style.css">
-    <!-- endinject -->
-    <link rel="shortcut icon" href="../../images/favicon.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Restoran Qeydiyyat</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <style>
+        body {
+            background: url('/images/restaurant-bg.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        .register-container {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .btn-register {
+            background-color: #28a745;
+            color: white;
+        }
+
+            .btn-register:hover {
+                background-color: #218838;
+            }
+    </style>
 </head>
-
 <body>
-    <div class="container-scroller">
-        <div class="container-fluid page-body-wrapper full-page-wrapper">
-            <div class="content-wrapper d-flex align-items-center auth px-0">
-                <div class="row w-100 mx-0">
-                    <div class="col-lg-4 mx-auto">
-                        <div class="auth-form-light text-left py-5 px-4 px-sm-5">
-
-                            <h4>Register Page</h4>
-
-                            <form method="post">
-                                <div class="form-group">
-                                    <input asp-for="Name" class="form-control form-control-lg" placeholder="Name">
-                                    <span asp-validation-for="Name"></span>
-                                </div>
-                                <div class="form-group">
-                                    <input asp-for="Surname" class="form-control form-control-lg" placeholder="Surname">
-                                    <span asp-validation-for="Surname"></span>
-                                </div>
-                                <div class="form-group">
-                                    <input asp-for="Email" class="form-control form-control-lg" placeholder="Email">
-                                    <span asp-validation-for="Email"></span>
-                                </div>
-                                <div class="form-group">
-                                    <input asp-for="UserName" class="form-control form-control-lg" placeholder="UserName">
-                                    <span asp-validation-for="UserName"></span>
-                                </div>
-                                <div class="form-group">
-                                    <input asp-for="Password" class="form-control form-control-lg" placeholder="Password">
-                                    <span asp-validation-for="Password"></span>
-                                </div>
-                                <div class="form-group">
-                                    <input asp-for="CurrentPassword" class="form-control form-control-lg" placeholder="CurrentPassword">
-                                    <span asp-validation-for="CurrentPassword"></span>
-                                </div>
-                                <div class="mb-2">
-                                    <button type="submit" class="btn btn-block btn-facebook auth-form-btn">
-                                        <i class="mdi mdi-facebook me-2"></i>Register
-                                    </button>
-                                </div>
-
-
-
-
-                            </form>
-                        </div>
-                    </div>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="col-md-5 register-container">
+            <h3 class="text-center mb-4">Qeydiyyat</h3>
+            <form asp-action="Register" method="post">
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label">Ad</label>
+                    <input asp-for="Name" class="form-control" placeholder="Ad" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
                 </div>
-            </div>
-            <!-- content-wrapper ends -->
+                <div class="mb-3">
+                    <label asp-for="Surname" class="form-label">Soyad</label>
+                    <input asp-for="Surname" class="form-control" placeholder="Soyad" />
+                    <span asp-validation-for="Surname" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label">Email</label>
+                    <input asp-for="Email" class="form-control" placeholder="Email" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="UserName" class="form-label">İstifadəçi adı</label>
+                    <input asp-for="UserName" class="form-control" placeholder="İstifadəçi adı" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Password" class="form-label">Şifrə</label>
+                    <input asp-for="Password" class="form-control" placeholder="Şifrə" type="password" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="CurrentPassword" class="form-label">Təkrar Şifrə</label>
+                    <input asp-for="CurrentPassword" class="form-control" placeholder="Təkrar Şifrə" type="password" />
+                    <span asp-validation-for="CurrentPassword" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-register w-100">Qeydiyyatdan keç</button>
+            </form>
         </div>
-        <!-- page-body-wrapper ends -->
     </div>
-    <!-- container-scroller -->
-    <!-- plugins:js -->
-    <script src="../../vendors/base/vendor.bundle.base.js"></script>
-    <!-- endinject -->
-    <!-- inject:js -->
-    <script src="../../js/off-canvas.js"></script>
-    <script src="../../js/hoverable-collapse.js"></script>
-    <script src="../../js/template.js"></script>
-    <!-- endinject -->
 </body>
-
 </html>
+

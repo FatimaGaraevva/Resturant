@@ -96,8 +96,10 @@ wwwroot\assets\images\3d9b9220-16e7-4363-a629-e2cbc9639a62hero-1.png
 wwwroot\assets\images\404-error\404-img.svg
 wwwroot\assets\images\404-error\header-img.png
 wwwroot\assets\images\404-error\Union.png
+wwwroot\assets\images\7542c693-4aec-4953-8c9d-62fe0c3e552ehero-1.png
 wwwroot\assets\images\about-1.png
 wwwroot\assets\images\about-us\header-img.png
+wwwroot\assets\images\arxa fon.jpg
 wwwroot\assets\images\blog-1.png
 wwwroot\assets\images\blog-2.png
 wwwroot\assets\images\blog-3.png
@@ -163,6 +165,10 @@ wwwroot\assets\images\cart-view\cart1.png
 wwwroot\assets\images\cart-view\cart2.png
 wwwroot\assets\images\cart-view\cart3.png
 wwwroot\assets\images\cart-view\checkout.png
+wwwroot\assets\images\cart1.png
+wwwroot\assets\images\cart2.png
+wwwroot\assets\images\cart3.png
+wwwroot\assets\images\checkout.png
 wwwroot\assets\images\chefs-1.png
 wwwroot\assets\images\chefs-2.png
 wwwroot\assets\images\chefspage2\chefs-1.png
@@ -188,6 +194,8 @@ wwwroot\assets\images\coming-soon\youtube.svg
 wwwroot\assets\images\comment-1.png
 wwwroot\assets\images\comment-2.png
 wwwroot\assets\images\comment-3.png
+wwwroot\assets\images\contact-1.png
+wwwroot\assets\images\contact-2.png
 wwwroot\assets\images\contact-us\contact-1.png
 wwwroot\assets\images\contact-us\contact-2.png
 wwwroot\assets\images\contact-us\contact-bg.png
@@ -196,13 +204,20 @@ wwwroot\assets\images\da5fce30-4653-4cf6-a90b-3dae0b3ac6b2gallery-1.png
 wwwroot\assets\images\fast-order-img.png
 wwwroot\assets\images\favicon\icon.png
 wwwroot\assets\images\fd324ee8-43b6-4ba9-83dc-1751164334c1hero-1.png
+wwwroot\assets\images\fonn.jpg
+wwwroot\assets\images\foto.jpg
 wwwroot\assets\images\gallery-1.png
 wwwroot\assets\images\gallery-2.png
 wwwroot\assets\images\gallery-3.png
 wwwroot\assets\images\gallery-4.png
 wwwroot\assets\images\gallery-5.png
 wwwroot\assets\images\gallery\icon-gallery.png
+wwwroot\assets\images\Halil ibrahim menu.pdf
 wwwroot\assets\images\hero-1.png
+wwwroot\assets\images\history-1.png
+wwwroot\assets\images\history-2.png
+wwwroot\assets\images\history-3.png
+wwwroot\assets\images\history-4.png
 wwwroot\assets\images\historypage\history-1.png
 wwwroot\assets\images\historypage\history-2.png
 wwwroot\assets\images\historypage\history-3.png
@@ -392,12 +407,15 @@ wwwroot\assets\images\post-2.png
 wwwroot\assets\images\post-3.png
 wwwroot\assets\images\post-4.png
 wwwroot\assets\images\post-5.png
+wwwroot\assets\images\QR.jpeg
 wwwroot\assets\images\related-1.png
 wwwroot\assets\images\related-2.png
 wwwroot\assets\images\reservation\header-img.png
 wwwroot\assets\images\reservation\table-img.png
 wwwroot\assets\images\restaurant-1.png
 wwwroot\assets\images\restaurant-2.png
+wwwroot\assets\images\restaurant-bg.jpg
+wwwroot\assets\images\sekil.jpg
 wwwroot\assets\images\single-blogpage1\blog-1.png
 wwwroot\assets\images\single-blogpage1\blog-2.png
 wwwroot\assets\images\single-blogpage1\blog-3.png
@@ -466,6 +484,7 @@ wwwroot\assets\webfonts\fa-solid-900.ttf
 wwwroot\assets\webfonts\fa-solid-900.woff2
 wwwroot\assets\webfonts\fa-v4compatibility.ttf
 wwwroot\assets\webfonts\fa-v4compatibility.woff2
+wwwroot\images\menus\hero-1_02d234e8-0959-40b3-b380-5aefbe9ab9ed.png
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css

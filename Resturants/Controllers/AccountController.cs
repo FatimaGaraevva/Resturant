@@ -88,7 +88,7 @@ namespace Resturants.Controllers
                 return View();
             }
            
-            await _signInManager.SignInAsync(user, false);
+           
             if (returnUrl is null)
             {
                 return RedirectToAction("Index", "Home");

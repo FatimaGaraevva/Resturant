@@ -1,6 +1,9 @@
 ﻿
 <!DOCTYPE html>
+
 <html lang="en">
+
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,7 +38,7 @@
 		<header id="header-homepage1">
 			<div class="header-full-section">
 				<div class="header-logo">
-					<a href="index.html">
+					<a asp-controller="Home">
 						<img src="~/assets/images/Homepage1/logo.png" alt="header-logo" class="homepage1-logo">
 					</a>
 				</div>
@@ -53,7 +56,7 @@
 											</ul>
 										</li>
 										<li class="nav-item dropdown">
-											<a class="nav-link dropdown-toggle " href="javascript:void(0);">
+											<a class="nav-link dropdown-toggle "asp-conntroler="Menu">
 												Menu
 											</a>
 											<ul class="dropdown-menu blog-menu-sub">
@@ -66,13 +69,7 @@
 												</li>
 											
 												
-												<li class="has-sub-main">
-													<a class="dropdown-item" href="javascript:void(0);">Menu Grid<span class="arrow-right-angle"></span></a>
-													<ul class="has-sub-menu">
-														<li><a class="dropdown-item" href="menupage-6.html">Menu Grid 1</a></li>
-														
-													</ul>
-												</li>
+											
 												<li class="has-sub-main">
 													<a asp-controller="Shop" class="dropdown-item"> Shop</a>
 												</li>
@@ -123,30 +120,28 @@
 													</ul>
 												</li>
 												<li class="has-sub-main">
-													<a class="dropdown-item" href="historypage.html">Our History</a>
+													<a class="dropdown-item"  asp-controller="OurHistory">Our History</a>
 												</li>
 												<li class="has-sub-main">
-													<a class="dropdown-item" href="404-error.html">404 Error</a>
+													<a class="dropdown-item" asp-controller="Error">404 Error</a>
+												</li>
+												
+												<li class="has-sub-main">
+													<a class="dropdown-item" asp-controller="CardView">Cart View</a>
 												</li>
 												<li class="has-sub-main">
-													<a class="dropdown-item" href="comming-soon.html">Coming Soon</a>
-												</li>
-												<li class="has-sub-main">
-													<a class="dropdown-item" href="cart-view.html">Cart View</a>
-												</li>
-												<li class="has-sub-main">
-													<a class="dropdown-item" href="checkout-page.html">Checkout</a>
+													<a class="dropdown-item" asp-controller="Checkout">Checkout</a>
 												</li>
 											</ul>
 										</li>
 										<li class="nav-item dropdown">
-											<a class="nav-link dropdown-toggle " href="about-us.html">
+											<a class="nav-link dropdown-toggle " asp-controller="AboutUs">
 												About Us
 											</a>
 										</li>
 
 										<li class="nav-item">
-											<a class="nav-link" href="contact-us.html">Contact Us</a>
+											<a class="nav-link" asp-controller="Contact">Contact Us</a>
 										</li>
 										@if (User.Identity.IsAuthenticated)
 										{
@@ -209,14 +204,7 @@
 											<li>
 												<a href='menupage-5.html'>Menu Section</a>
 											</li>
-											<li>
-												<a href='javascript:void(0);'>Menu Grid</a>
-												<ul>
-													<li><a href="menupage-6.html">Menu Grid 1</a></li>
-													<li><a href="menupage-7.html">Menu Grid 2</a></li>
-													<li><a href="menupage-8.html">Menu Grid 2</a></li>
-												</ul>
-											</li>
+											
 											<li>
 												<a href='single-shop.html'>Single Shop</a>
 											</li>
@@ -249,6 +237,7 @@
 												</ul>
 											</li>
 											<li>
+
 												<a href='javascript:void(0);'>Blog Masonry</a>
 												<ul>
 													<li><a href="blogpage-12.html">Blog Masonry 1</a></li>
@@ -279,47 +268,45 @@
 											<li>
 												<a href='javascript:void(0);'>Our Chefs</a>
 												<ul>
-													<li><a href="chefspage1.html">Our Chefs 1</a></li>
-													<li><a href="chefspage2.html">Our Chefs 2</a></li>
-													<li><a href="chefspage3.html">Our Chefs 3</a></li>
+													<li><a href="chefspage1.html">Our Chefs </a></li>
+													
 													<li><a href="single-chefs-deatail-page.html">Single Chefs Details</a></li>
 												</ul>
 											</li>
 											<li>
 												<a href='javascript:void(0);'>Reservation</a>
 												<ul>
-													<li><a href="reservation-1.html">Reservation 1</a></li>
-													<li><a href="reservation-2.html">Reservation 2</a></li>
-													<li><a href="reservation-3.html">Reservation 3</a></li>
+												
+													<li><a href="reservation-2.html">Reservation </a></li>
+													
 												</ul>
 											</li>
 											<li>
-												<a href='historypage.html'>Our History</a>
+												<a asp-controller="OurHistory" asp-action="Index">Our History</a>
 											</li>
 											<li>
-												<a href='404-error.html'>404 Error</a>
+												<a asp-controller="Error" >404 Error</a>
+											</li>
+											
+											<li>
+												<a asp-controller="CardView">Cart View</a>
 											</li>
 											<li>
-												<a href='comming-soon.html'>Coming Soon</a>
-											</li>
-											<li>
-												<a href='cart-view.html'>Cart View</a>
-											</li>
-											<li>
-												<a href='checkout-page.html'>Checkout</a>
+												<a asp-controller="Checout">Checkout</a>
 											</li>
 										</ul>
 									</li>
 									<li>
-										<a href='about-us.html'>About us</a>
+										<a asp-controller="AboutUs" >About us</a>
 									</li>
 									<li>
-										<a href='contact-us.html'>Contact us</a>
+										<a asp-controller="Contact">Contact us</a>
 									</li>
 								</ul>
 							</nav>
 						</div>
 					</div>
+
 				</div>
 				<div class="header-cart-sec">
 					<div class="mobile-menu-icon">
@@ -328,7 +315,7 @@
 						</a>
 					</div>
 					<div class="header-cart-sec-first">
-						<a href="cart-view.html" class="cart-badge">
+						<a asp-controller="CardView" class="cart-badge">
 							<img src="~/assets/images/Homepage1/cart-icon.svg" alt="cart-icon">
 							<div class="cart-no">0</div>
 						</a>
